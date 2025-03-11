@@ -21,7 +21,7 @@ export const About = () => {
           About Me
         </h2>
         <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-0 transition-all">
-          <p className="text-gray-300 mb-b">
+          <p className="text-gray-300 mb-b text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iure
             sed facere doloribus! Hic delectus repellat voluptatibus excepturi
           </p>
@@ -32,7 +32,7 @@ export const About = () => {
                 {frontEndSkills.map((tech, key) => (
                   <span
                     key={key}
-                    className="bg-blue-500/50 text-blue-500 py-1 px-3 rounded-3xl text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition"
+                    className="bg-blue-500/50 text-blue-500 py-1 px-3 rounded-3xl text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
                   >
                     {tech}
                   </span>
@@ -45,7 +45,7 @@ export const About = () => {
                 {backEndSkills.map((tech, key) => (
                   <span
                     key={key}
-                    className="bg-blue-500/50 text-blue-500 py-1 px-3 rounded-3xl text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition"
+                    className="bg-blue-500/50 text-blue-500 py-1 px-3 rounded-3xl text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
                   >
                     {tech}
                   </span>
