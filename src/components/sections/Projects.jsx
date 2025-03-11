@@ -32,7 +32,7 @@ export const Projects = () => {
             >
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>
               <p className="text-gray-400 mb-4">{project.description}</p>
-              <div className="space-x-2">
+              <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((tech, key) => (
                   <span
                     key={key}
