@@ -8,13 +8,25 @@ export const Home = () => {
         <h1 className="text-5xl md:text-6xl font-bold mb-6 py-1 bg-gradient-to-r from-blue-600 to-green-700 bg-clip-text text-transparent leading-right">
           Hi, I'm Miguel Fernandez
         </h1>
-        <p className="text-gray-400 text-md mb-8 max-w-lg mx-auto">
-          I'm Miguel Fernández, a systems engineer specializing in front-end
-          development. I create interactive and responsive user interfaces,
-          applying Clean Code principles and SOLID design patterns to ensure
-          maintainable and efficient solutions. I also have experience working
-          with APIs and building scalable systems.
+        <p className="text-gray-400 text-md mb-8 max-w-xl mx-auto">
+          I'm systems engineer, with a focus on front-end development, creating
+          interactive and responsive user interfaces, and building scalable
+          systems with expertise in APIs and clean code.
         </p>
+        <div className="flex justify-center space-x-4">
+          <a
+            href="#projects"
+            className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgb(59,130,246,0.4)]"
+          >
+            View My Projects
+          </a>
+          <a
+            href="#contact"
+            className="border border-blue-500/50 text-blue-500 py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgb(59,130,246,0.2)] hover:bg-blue-500/10"
+          >
+            Contact me
+          </a>
+        </div>
       </div>
     </section>
   );
