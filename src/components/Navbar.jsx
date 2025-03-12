@@ -10,7 +10,11 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
         <div className="flex justify-between items-center h-16">
           <a href="#home" className="font-mono">
             {" "}
-            <img className="h-5 w-auto " src="public/MF.svg" alt="Logo staff" />
+            <img
+              className="h-5 w-auto "
+              src="src/assets/MF.svg"
+              alt="Logo staff"
+            />
           </a>
           <div
             className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
