@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import logo from '../assets/MF.svg';
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {
@@ -12,7 +13,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             {" "}
             <img
               className="h-5 w-auto "
-              src="src/assets/MF.svg"
+              src={logo}
               alt="Logo staff"
             />
           </a>
