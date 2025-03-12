@@ -28,7 +28,7 @@ export const About = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iure
               sed facere doloribus! Hic delectus repellat voluptatibus excepturi
             </p>
-            <section className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
               <div className="rounded-3xl p-6 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4">Frontend</h3>
                 <div className="flex flex-wrap gap-2">
@@ -55,7 +55,7 @@ export const About = () => {
                   ))}
                 </div>
               </div>
-            </section>
+            </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
