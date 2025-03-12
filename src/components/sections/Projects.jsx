@@ -1,7 +1,7 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Projects = () => {
-  const projects = [
+  const projectsObject = [
     {
       title: "Landing page (Wowdeck)",
       description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
@@ -11,7 +11,7 @@ export const Projects = () => {
     {
       title: "Node-auth",
       description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-      tech: ["Node.js", "Typescript", "MongoDB", "Docker"],
+      tech: ["Node.js", "Typescript", "MongoDB"],
       link: "https://github.com/miguelFernandez98/Node-auth",
     },
   ];
@@ -28,7 +28,7 @@ export const Projects = () => {
             Featured Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {projects.map((project, key) => (
+            {projectsObject.map((project, key) => (
               <div
                 key={key}
                 className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition
