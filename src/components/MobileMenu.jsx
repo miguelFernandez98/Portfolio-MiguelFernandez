@@ -1,4 +1,11 @@
 export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
+  const links = [
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "projects", label: "Projects" },
+    { id: "contact", label: "Contact" },
+  ];
+
   return (
     <div
       className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.8)] z-40 flex flex-col items-center justify-center transition-all duration-300 ease-in-out ${
@@ -34,7 +41,18 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
           />
         </svg>
       </button>
-      <a
+      {links.map((link) => (
+        <a
+          key={link.id}
+          href={`#${link.id}`}
+          className={`text-2xl font-semibold text-white my-4 transition-transform duration-300 ${
+            menuOpen ? "translate-y-0 opacity-100" : "opacity-0 translate-y-5"
+          }`}
+        >
+          {link.label}
+        </a>
+      ))}
+      {/*   <a
         href="#home"
         onClick={() => setMenuOpen(false)}
         className={`text-2xl font-semibold text-white my-4 transition-transform duration-300 ${
@@ -69,7 +87,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
         }`}
       >
         Contact{" "}
-      </a>
+      </a> */}
     </div>
   );
 };

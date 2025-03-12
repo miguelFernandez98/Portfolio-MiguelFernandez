@@ -37,14 +37,14 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   return (
     <nav className="fixed top-0 w-full z-40 bg-transparent backdrop-blur-sm">
       <section className="max-w-xl mx-auto px-4 py-2 flex justify-between items-center">
-        <div>
+        <div className="px-6">
           <a href="#home" className="font-mono">
             <img className="h-5 w-auto" src={logo} alt="Logo staff" />
           </a>
         </div>
         <div className="flex justify-center items-center h-12 py-3 px-6 md:bg-[rgba(10,10,10,0.8)] md:backdrop-blur-sm md:border md:border-white/20 md:shadow-lg md:rounded-4xl">
           <div
-            className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
+            className="w-7 h-5 relative text-center cursor-pointer z-40 md:hidden"
             onClick={() => setMenuOpen((prev) => !prev)}
           >
             ☰
