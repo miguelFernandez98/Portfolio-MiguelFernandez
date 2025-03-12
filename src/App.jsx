@@ -4,7 +4,7 @@ import "./index.css";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { Navbar } from "./components/Navbar";
 import { MobileMenu } from "./components/MobileMenu";
-import { Home, About, Projects } from "./components/sections";
+import { Home, About, Projects, Contact } from "./components/sections";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -21,6 +21,7 @@ function App() {
         <Home />
         <About />
         <Projects />
+        <Contact />
       </section>
     </>
   );
