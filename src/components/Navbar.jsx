@@ -26,7 +26,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           }
         });
       },
-      { threshold: 0.1, rootMargin: "0px 0px -40% 0px" }
+      { threshold: 0.1, rootMargin: "0px 0px -60% 0px" }
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -39,7 +39,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
       <section className="max-w-xl mx-auto px-4 py-2 flex justify-between items-center">
         <div className="px-6">
           <a href="#home" className="font-mono">
-            <img className="h-5 w-auto" src={logo} alt="Logo staff" />
+            <img className="h-5 w-auto" src={logo} alt="Logo staff"/>
           </a>
         </div>
         <div className="flex justify-center items-center h-12 py-3 px-6 md:bg-[rgba(10,10,10,0.8)] md:backdrop-blur-sm md:border md:border-white/20 md:shadow-lg md:rounded-4xl">

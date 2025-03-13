@@ -25,8 +25,9 @@ export const About = () => {
           </h2>
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-0 transition-all">
             <p className="text-gray-300 mb-b text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero iure
-              sed facere doloribus! Hic delectus repellat voluptatibus excepturi
+              Experienced frontend developer with backend basics. Adaptable to
+              new technologies and continuous learner.{" "}
+              <strong>University of Margarita graduate 2017-2022 </strong>.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
               <div className="rounded-3xl p-6 hover:-translate-y-1 transition-all">
@@ -57,26 +58,23 @@ export const About = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+          <div className="flex justify-center items-center gap-6 mt-8">
+            {/*     <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4">Education</h3>
               <ul className="list-disc list-inside2 text-gray-300 space-y-2">
                 <li>
                   <strong>Systems engineer</strong> - Universidad de Margarita
                   (2017-2022)
                 </li>
-                {/* <li>
-                <strong>Systems engineer</strong> - Universidad de Margarita
-             (2017-2022)
-              </li> */}
+             
               </ul>
-            </div>
+            </div> */}
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4">Work Experience</h3>
               <div className="space-y-4 text-gray-300">
                 <div>
                   <h4 className="font-semibold">
-                    Frontend developer at OMNINEXO - WAIKERI HITECH (2024 -
+                    Frontend developer <br /> OMNINEXO - WAIKERI HITECH (2024 -
                     Present)
                   </h4>
                   <p>
@@ -87,8 +85,8 @@ export const About = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold">
-                    Development specialist at INSIDE MARKET/Rio supermarket
-                    (2022 - 2024)
+                    Development specialist <br />
+                    INSIDE MARKET/RIO SUPERMARKET (2022 - 2024)
                   </h4>
                   <p>
                     {" "}
@@ -97,14 +95,16 @@ export const About = () => {
                     tools.{" "}
                   </p>
                 </div>
-                {/* <div>
-                <h4>Development analyst at GUUAO/LEIROS (2023)</h4>
-                <p>
-                  {" "}
-                  Improved an outdated mobile app by resolving errors and
-                  enhancing functionality through design changes.{" "}
-                </p>
-              </div> */}
+                <div>
+                  <h4 className="font-semibold">
+                    Development analyst <br /> GUUAO/LEIROS (2023)
+                  </h4>
+                  <p>
+                    {" "}
+                    Improved an outdated mobile app by resolving errors and
+                    enhancing functionality through design changes.{" "}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
