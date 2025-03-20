@@ -31,9 +31,9 @@ export const Projects = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {projectsObject.map((project, key) => (
-              <div
+              <article
                 key={key}
-                className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition"
+                className="p-6 rounded-4xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition"
               >
                 {Object.keys(project).length === 0 ? (
                   <SkeletonLoader />
@@ -62,7 +62,7 @@ export const Projects = () => {
                     </div>
                   </>
                 )}
-              </div>
+              </article>
             ))}
           </div>
         </div>

@@ -23,14 +23,14 @@ export const About = () => {
             {" "}
             About Me
           </h2>
-          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-0 transition-all">
+          <div className="rounded-4xl p-8 border-white/10 border hover:-translate-y-0 transition-all">
             <p className="text-gray-300 mb-b text-center">
               Experienced frontend developer with backend basics. Adaptable to
               new technologies and continuous learner.{" "}
               <strong>University of Margarita graduate 2017-2022 </strong>.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
-              <div className="rounded-3xl p-6 hover:-translate-y-1 transition-all">
+              <div className="rounded-4xl p-6 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4">Frontend</h3>
                 <div className="flex flex-wrap gap-2">
                   {frontEndSkills.map((tech, key) => (
@@ -43,7 +43,7 @@ export const About = () => {
                   ))}
                 </div>
               </div>
-              <div className="rounded-3xl p-6 hover:-translate-y-1 transition-all">
+              <div className="rounded-4xl p-6 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4">Backend</h3>
                 <div className="flex flex-wrap gap-2">
                   {backEndSkills.map((tech, key) => (
@@ -69,7 +69,7 @@ export const About = () => {
              
               </ul>
             </div> */}
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+            <div className="p-6 rounded-4xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4">Work Experience</h3>
               <div className="space-y-4 text-gray-300">
                 <div>
