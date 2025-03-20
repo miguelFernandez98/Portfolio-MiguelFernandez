@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { RevealOnScroll } from "../RevealOnScroll";
+import { toast } from "sonner";
 import emailjs from "emailjs-com";
+import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,8 +10,17 @@ export const Contact = () => {
     message: "",
   });
 
+  const validateEmail = (email) => {
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!validateEmail(formData.email)) {
+      toast.warning("¡invalid email!");
+      return;
+    }
     emailjs
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
@@ -19,10 +29,12 @@ export const Contact = () => {
         import.meta.env.VITE_PUBLIC_KEY
       )
       .then((result) => {
-        alert("Message sent!");
+        toast.success("Message sent!");
         setFormData({ name: "", email: "", message: "" });
       })
-      .catch(() => alert("Oops! Something went wrong. Please try again."));
+      .catch(() =>
+        toast.error("Oops! Something went wrong. Please try again.")
+      );
   };
 
   return (
