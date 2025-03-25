@@ -23,14 +23,14 @@ export const About = () => {
             {" "}
             About Me
           </h2>
-          <div className="rounded-4xl p-8 border-white/10 border hover:-translate-y-0 transition-all">
+          <article className="rounded-4xl p-8 border-white/10 border hover:-translate-y-0 transition-all">
             <p className="text-gray-300 mb-b text-center">
               Experienced frontend developer with backend basics. Adaptable to
               new technologies and continuous learner.{" "}
               <strong>University of Margarita graduate 2017-2022 </strong>.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
-              <div className="rounded-4xl p-6 hover:-translate-y-1 transition-all">
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+              <li className="rounded-4xl p-6 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4">Frontend</h3>
                 <div className="flex flex-wrap gap-2">
                   {frontEndSkills.map((tech, key) => (
@@ -42,8 +42,8 @@ export const About = () => {
                     </span>
                   ))}
                 </div>
-              </div>
-              <div className="rounded-4xl p-6 hover:-translate-y-1 transition-all">
+              </li>
+              <li className="rounded-4xl p-6 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4">Backend</h3>
                 <div className="flex flex-wrap gap-2">
                   {backEndSkills.map((tech, key) => (
@@ -55,38 +55,30 @@ export const About = () => {
                     </span>
                   ))}
                 </div>
-              </div>
-            </div>
-          </div>
+              </li>
+            </ul>
+          </article>
+
           <div className="flex justify-center items-center gap-6 mt-8">
-            {/*     <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4">Education</h3>
-              <ul className="list-disc list-inside2 text-gray-300 space-y-2">
-                <li>
-                  <strong>Systems engineer</strong> - Universidad de Margarita
-                  (2017-2022)
-                </li>
-             
-              </ul>
-            </div> */}
-            <div className="p-6 rounded-4xl border-white/10 border hover:-translate-y-1 transition-all">
+            <article className="p-6 rounded-4xl border-white/10 border hover:-translate-y-1 transition-all">
               <h3 className="text-xl font-bold mb-4">Work Experience</h3>
-              <div className="space-y-4 text-gray-300">
-                <div>
+              <ul className="space-y-4 text-gray-300">
+                <li>
                   <h4 className="font-semibold">
-                    Frontend developer <br /> OMNINEXO - WAIKERI HITECH (2024 -
-                    Present)
+                    Frontend developer <br /> OMNINEXO - WAIKERI HITECH{" "}
+                    <span className="whitespace-nowrap">(2024 - Present)</span>
                   </h4>
                   <p>
                     {" "}
                     Developing mobile and web applications to optimize business
                     management and operations.{" "}
                   </p>
-                </div>
-                <div>
+                </li>
+                <li>
                   <h4 className="font-semibold">
                     Development specialist <br />
-                    INSIDE MARKET/RIO SUPERMARKET (2022 - 2024)
+                    INSIDE MARKET/RIO SUPERMARKET{" "}
+                    <span className="whitespace-nowrap">(2022 - 2024)</span>
                   </h4>
                   <p>
                     {" "}
@@ -94,19 +86,20 @@ export const About = () => {
                     user experience, including scheduling and reconciliation
                     tools.{" "}
                   </p>
-                </div>
-                <div>
+                </li>
+                <li>
                   <h4 className="font-semibold">
-                    Development analyst <br /> GUUAO/LEIROS (2023)
+                    Development analyst <br /> GUUAO/LEIROS{" "}
+                    <span className="whitespace-nowrap">(2023 - 2023)</span>
                   </h4>
                   <p>
                     {" "}
                     Improved an outdated mobile app by resolving errors and
                     enhancing functionality through design changes.{" "}
                   </p>
-                </div>
-              </div>
-            </div>
+                </li>
+              </ul>
+            </article>
           </div>
         </div>
       </RevealOnScroll>

@@ -8,7 +8,7 @@ export const Home = () => {
     >
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 py-2 bg-gradient-to-br from-blue-500 to-emerald-600 bg-clip-text text-transparent leading-right">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 py-3 bg-gradient-to-br from-blue-500 to-emerald-600 bg-clip-text text-transparent leading-13 ">
             Hi, I'm Miguel Fernandez
           </h1>
           <p className="text-gray-400 text-md mb-8 max-w-xl mx-auto">
@@ -19,7 +19,7 @@ export const Home = () => {
           <div className="flex justify-center space-x-5">
             <a
               href="#"
-              className="bg-blue-500 text-white p-3 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgb(59,130,246,0.4)]"
+              className="bg-blue-500 text-white py-3 px-6  rounded-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgb(59,130,246,0.4)]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@ export const Home = () => {
             </a>
             <a
               href="#"
-              className="bg-purple-600 text-white p-3 rounded-full font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgb(59,130,246,0.4)]"
+              className="bg-purple-600 text-white py-3 px-6 rounded-full font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgb(59,130,246,0.4)]"
             >
               {" "}
               <svg
@@ -52,7 +52,7 @@ export const Home = () => {
             </a>
             <a
               href="#"
-              className="bg-gradient-to-br from-purple-600 via-pink-600 to-orange-400  text-white p-3 rounded-full font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgb(59,130,246,0.4)]"
+              className="bg-gradient-to-br from-purple-600 via-pink-600 to-orange-400  text-white py-3 px-6 rounded-full font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgb(59,130,246,0.4)]"
             >
               {" "}
               <svg
