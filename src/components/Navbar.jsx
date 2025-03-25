@@ -36,7 +36,7 @@ export const Navbar = ({ menuOpen, setMenuOpen, isDark, toggleDarkMode }) => {
 
   return (
     <nav className="sticky top-0 w-full z-40 bg-transparent backdrop-blur-sm">
-      <section className="max-w-xl mx-auto px-4 py-2 flex justify-between items-center">
+      <section className="max-w-xl mx-auto px-6 py-2 flex justify-between items-center">
         <div>
           <a className="font-mono">
             <img className="h-5 w-auto" src={logo} alt="Logo staff" />
@@ -67,6 +67,7 @@ export const Navbar = ({ menuOpen, setMenuOpen, isDark, toggleDarkMode }) => {
         </div>
         <div className="hidden md:flex">
           <button
+            aria-label="Dark mode"
             onClick={toggleDarkMode}
             id="darkMode"
             className="font-mono cursor-pointer"

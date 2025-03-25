@@ -14,9 +14,9 @@ function App() {
 
   useEffect(() => {
     if (isDark) {
-      document.documentElement.classList.add("dark");
+      document.documentElement.classList.add('dark');
     } else {
-      document.documentElement.classList.remove("dark");
+      document.documentElement.classList.remove('dark');
     }
   }, [isDark]);
 
@@ -29,14 +29,14 @@ function App() {
         } bg-white dark:bg-black text-gray-900 dark:text-gray-100`}
       >
         <Toaster theme={isDark ? "dark" : "light"} richColors />
-        <Navbar
-          menuOpen={menuOpen}
-          setMenuOpen={setMenuOpen}
-          isDark={isDark}
+        <Navbar 
+          menuOpen={menuOpen} 
+          setMenuOpen={setMenuOpen} 
+          isDark={isDark} 
           toggleDarkMode={() => setIsDark(!isDark)}
         />
-        <MobileMenu
-          menuOpen={menuOpen}
+        <MobileMenu 
+          menuOpen={menuOpen} 
           setMenuOpen={setMenuOpen}
           isDark={isDark}
           toggleDarkMode={() => setIsDark(!isDark)}
