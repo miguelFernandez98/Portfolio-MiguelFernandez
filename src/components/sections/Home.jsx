@@ -11,7 +11,7 @@ export const Home = () => {
           <h1 className="text-5xl md:text-6xl font-bold mb-6 py-3 bg-gradient-to-br from-blue-500 to-emerald-600 bg-clip-text text-transparent leading-13 ">
             Hi, I'm Miguel Fernandez
           </h1>
-          <p className="text-gray-400 text-md mb-8 max-w-xl mx-auto">
+          <p className="dark:text-gray-400 text-gray-500 text-md mb-8 max-w-xl mx-auto">
             I'm systems engineer, with a focus on front-end development,
             creating interactive and responsive user interfaces, and building
             scalable systems with expertise in APIs and clean code.

@@ -51,7 +51,7 @@ export const Contact = () => {
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="relative">
               <input
-                className="w-full bg-white/5 border border-white/10 rounded-full px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                className="w-full placeholder:text-gray-400/80 bg-white/5 border border-gray-300 dark:border-white/10 rounded-full px-4 py-3 transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 type="text"
                 id="name"
                 name="name"
@@ -65,7 +65,7 @@ export const Contact = () => {
             </div>
             <div className="relative">
               <input
-                className="w-full bg-white/5 border border-white/10 rounded-full px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                className="w-full placeholder:text-gray-400/80 bg-white/5 border border-gray-300 dark:border-white/10 rounded-full px-4 py-3  transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 type="text"
                 id="email"
                 name="email"
@@ -79,7 +79,7 @@ export const Contact = () => {
             </div>
             <div className="relative">
               <textarea
-                className="w-full bg-white/5 border border-white/10 rounded-4xl px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                className="w-full placeholder:text-gray-400/80 bg-white/5 border border-gray-300 dark:border-white/10 rounded-4xl px-4 py-3  transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 id="message"
                 name="message"
                 required

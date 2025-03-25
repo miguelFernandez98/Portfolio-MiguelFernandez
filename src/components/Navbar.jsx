@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import logo from "../assets/MF.svg";
 
-export const Navbar = ({ menuOpen, setMenuOpen }) => {
+export const Navbar = ({ menuOpen, setMenuOpen, isDark, toggleDarkMode }) => {
   const [activeSection, setActiveSection] = useState("home");
 
   const links = [
@@ -35,7 +35,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   }, []);
 
   return (
-    <nav className="fixed top-0 w-full z-40 bg-transparent backdrop-blur-sm">
+    <nav className="sticky top-0 w-full z-40 bg-transparent backdrop-blur-sm">
       <section className="max-w-xl mx-auto px-4 py-2 flex justify-between items-center">
         <div>
           <a className="font-mono">
@@ -57,7 +57,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                 className={`${
                   activeSection === link.id
                     ? "text-blue-500"
-                    : "hover:text-white"
+                    : "hover:text-blue-400"
                 }  transition-colors`}
               >
                 {link.label}
@@ -66,22 +66,44 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
           </div>
         </div>
         <div className="hidden md:flex">
-          <button id="darkMode" className="font-mono">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="1.4em"
-              height="1.4em"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0-8 0m-5 0h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m12.1-.7l-.7.7m0 11.4l.7.7m-12.1-.7l-.7.7"
-              />
-            </svg>
+          <button
+            onClick={toggleDarkMode}
+            id="darkMode"
+            className="font-mono cursor-pointer"
+          >
+            {!isDark ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.4em"
+                height="1.4em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M8 12a4 4 0 1 0 8 0a4 4 0 1 0-8 0m-5 0h1m8-9v1m8 8h1m-9 8v1M5.6 5.6l.7.7m12.1-.7l-.7.7m0 11.4l.7.7m-12.1-.7l-.7.7"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1.4em"
+                height="1.4em"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M12 3h.393a7.5 7.5 0 0 0 7.92 12.446A9 9 0 1 1 12 2.992z"
+                />
+              </svg>
+            )}
           </button>
         </div>
       </section>

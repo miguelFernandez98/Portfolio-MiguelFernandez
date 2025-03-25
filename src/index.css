@@ -1,13 +1,17 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 html,
 body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background: #0a0a0a;
-  color: #f3f4f6;
   scrollbar-gutter: stable;
+  @apply bg-[#f3f4f6] text-[#0a0a0a];
+}
+
+.dark {
+  @apply bg-[#0a0a0a] text-[#f3f4f6];
 }
 
 @layer utilities {
@@ -51,5 +55,3 @@ body {
 .no-scroll {
   overflow: hidden;
 }
-
-
