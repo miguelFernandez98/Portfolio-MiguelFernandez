@@ -18,7 +18,8 @@ export const Home = () => {
           </p>
           <div className="flex justify-center space-x-5">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/miguel-angel-fernandez-soto-06b8b9252/"
+              target="_blank"
               className="bg-blue-500 text-white py-3 px-6  rounded-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgb(59,130,246,0.4)]"
             >
               <svg
@@ -34,7 +35,8 @@ export const Home = () => {
               </svg>
             </a>
             <a
-              href="#"
+              href="https://github.com/miguelFernandez98"
+              target="_blank"
               className="bg-purple-600 text-white py-3 px-6 rounded-full font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgb(59,130,246,0.4)]"
             >
               {" "}

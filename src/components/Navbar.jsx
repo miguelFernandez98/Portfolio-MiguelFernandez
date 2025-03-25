@@ -38,7 +38,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     <nav className="fixed top-0 w-full z-40 bg-transparent backdrop-blur-sm">
       <section className="max-w-xl mx-auto px-4 py-2 flex justify-between items-center">
         <div>
-          <a href="#home" className="font-mono">
+          <a className="font-mono">
             <img className="h-5 w-auto" src={logo} alt="Logo staff" />
           </a>
         </div>
