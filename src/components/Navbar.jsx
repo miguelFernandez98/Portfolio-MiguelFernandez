@@ -35,7 +35,7 @@ export const Navbar = ({ menuOpen, setMenuOpen, isDark, toggleDarkMode }) => {
   }, []);
 
   return (
-    <nav className="sticky top-0 w-full z-40 bg-transparent backdrop-blur-sm">
+    <nav className="fixed top-0 w-full z-40 bg-transparent backdrop-blur-sm">
       <section className="max-w-xl mx-auto px-6 py-2 flex justify-between items-center">
         <div>
           <a className="font-mono">

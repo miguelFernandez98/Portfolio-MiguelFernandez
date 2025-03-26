@@ -18,7 +18,6 @@ export const LoadingScreen = ({ onComplete }) => {
     return () => clearInterval(interval);
   }, [onComplete]);
 
-  //remove scroll in LoadingScreen
   useEffect(() => {
     document.body.classList.add("no-scroll");
     return () => {
@@ -27,7 +26,7 @@ export const LoadingScreen = ({ onComplete }) => {
   }, []);
 
   return (
-    <section className="fixed inset-0 z-50 bg-black text-gray-100 flex flex-col items-center justify-center">
+    <section className="fixed inset-0 z-50 bg-white dark:bg-[#0a0a0a] dark:text-gray-100 text-gray-900 flex flex-col items-center justify-center">
       <div className="mb-4 text-4xl font-mono font-bold">
         {text}
         <span className="animate-blink ml-1">|</span>

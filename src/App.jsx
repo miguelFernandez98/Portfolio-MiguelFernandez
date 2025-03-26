@@ -14,29 +14,29 @@ function App() {
 
   useEffect(() => {
     if (isDark) {
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove("dark");
     }
   }, [isDark]);
 
   return (
     <>
-      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
+      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}{" "}
       <section
         className={`min-h-screen transition-all duration-700 ${
           isLoaded ? "opacity-100" : "opacity-0"
-        } bg-white dark:bg-black text-gray-900 dark:text-gray-100`}
+        } bg-white dark:bg-[#0a0a0a] dark:text-gray-100 text-gray-900 `}
       >
         <Toaster theme={isDark ? "dark" : "light"} richColors />
-        <Navbar 
-          menuOpen={menuOpen} 
-          setMenuOpen={setMenuOpen} 
-          isDark={isDark} 
+        <Navbar
+          menuOpen={menuOpen}
+          setMenuOpen={setMenuOpen}
+          isDark={isDark}
           toggleDarkMode={() => setIsDark(!isDark)}
         />
-        <MobileMenu 
-          menuOpen={menuOpen} 
+        <MobileMenu
+          menuOpen={menuOpen}
           setMenuOpen={setMenuOpen}
           isDark={isDark}
           toggleDarkMode={() => setIsDark(!isDark)}

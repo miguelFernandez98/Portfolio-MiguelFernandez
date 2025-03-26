@@ -16,7 +16,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen, toggleDarkMode }) => {
     >
       <div className="absolute top-0 mt-5 flex items-center w-full justify-between px-10">
         <button
-          className=" text-gray-100 text-3xl focus:outline-none cursor-pointer"
+          className="text-gray-100 text-3xl focus:outline-none cursor-pointer"
           onClick={toggleDarkMode}
           id="darkMode"
         >
