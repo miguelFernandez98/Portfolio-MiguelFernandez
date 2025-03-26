@@ -24,7 +24,7 @@ function App() {
     <>
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
       <section
-        className={`min-h-screen transition-all duration-300 ${
+        className={`min-h-screen transition-all duration-700 ${
           isLoaded ? "opacity-100" : "opacity-0"
         } bg-white dark:bg-black text-gray-900 dark:text-gray-100`}
       >

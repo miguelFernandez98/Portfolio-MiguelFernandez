@@ -39,7 +39,7 @@ export const Projects = () => {
                   <SkeletonLoader />
                 ) : (
                   <>
-                    <h3 className="text-xl font-bold mb-2 text-gray-800/90 dark:text-white">
+                    <h3 className="text-xl font-bold mb-2 text-gray-800/90 dark:text-gray-100">
                       {project.title}
                     </h3>
                     <p className="text-gray-500 dark:text-gray-400 mb-4">

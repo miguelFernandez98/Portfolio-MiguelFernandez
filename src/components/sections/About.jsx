@@ -54,7 +54,7 @@ export const About = () => {
             </p>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <li className="rounded-4xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4 text-gray-800/90 dark:text-white">
+                <h3 className="text-xl font-bold mb-4 text-gray-800/90 dark:text-gray-100">
                   Frontend
                 </h3>
                 <div className="flex flex-wrap gap-2">
@@ -69,7 +69,7 @@ export const About = () => {
                 </div>
               </li>
               <li className="rounded-4xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4 text-gray-800/90 dark:text-white">
+                <h3 className="text-xl font-bold mb-4 text-gray-800/90 dark:text-gray-100">
                   Backend
                 </h3>
                 <div className="flex flex-wrap gap-2">
@@ -88,7 +88,7 @@ export const About = () => {
 
           <div className="flex justify-center items-center gap-6 mt-8">
             <article className="p-6 rounded-4xl border border-gray-400/20 dark:border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-xl font-bold mb-6 text-gray-800/90 dark:text-white">
+              <h3 className="text-xl font-bold mb-6 text-gray-800/90 dark:text-gray-100">
                 Work Experience
               </h3>
               <ul role="list" className="m-4 max-w-screen-md">
@@ -99,7 +99,7 @@ export const About = () => {
                   >
                     <div className="absolute bottom-0 left-[calc(0.33rem-0.5px)] top-0 w-px bg-blue-500/20 group-first:top-3" />
                     <div className="absolute left-0 top-2 h-2.5 w-2.5 rounded-full border-[1.5px] border-blue-500 dark:bg-[#0a0a0a] bg-[#f3f4f6]" />
-                    <h4 className="mt-2 font-semibold text-gray-800/90 dark:text-white">
+                    <h4 className="mt-2 font-semibold text-gray-800/90 dark:text-gray-100">
                       {job.position}
                       <br />
                       <span className="text-gray-500 dark:text-gray-400 ">

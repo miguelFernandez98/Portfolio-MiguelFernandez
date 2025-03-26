@@ -1,5 +1,4 @@
 export const MobileMenu = ({ menuOpen, setMenuOpen, toggleDarkMode }) => {
-  
   const links = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
@@ -17,7 +16,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen, toggleDarkMode }) => {
     >
       <div className="absolute top-0 mt-5 flex items-center w-full justify-between px-10">
         <button
-          className=" text-white text-3xl focus:outline-none cursor-pointer"
+          className=" text-gray-100 text-3xl focus:outline-none cursor-pointer"
           onClick={toggleDarkMode}
           id="darkMode"
         >
@@ -39,7 +38,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen, toggleDarkMode }) => {
         </button>
         <button
           aria-label="Close menu"
-          className=" text-white text-3xl focus:outline-none cursor-pointer"
+          className="text-gray-100 text-3xl focus:outline-none cursor-pointer"
           onClick={() => setMenuOpen(false)}
         >
           &times;
@@ -50,7 +49,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen, toggleDarkMode }) => {
           key={link.id}
           href={`#${link.id}`}
           onClick={() => setMenuOpen(false)}
-          className={`text-2xl font-semibold text-white my-4 transition-transform duration-300 ${
+          className={`text-2xl font-semibold text-gray-100 my-4 transition-transform duration-300 ${
             menuOpen ? "translate-y-0 opacity-100" : "opacity-0 translate-y-5"
           }`}
         >

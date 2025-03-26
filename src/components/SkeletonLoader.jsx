@@ -11,7 +11,7 @@ export const SkeletonLoader = () => {
       </div>
       <div className="w-full flex flex-row justify-between items-center">
         <div className="h-4 bg-gray-400 dark:bg-gray-700 rounded w-1/4 animate-pulse"></div>
-        <div className="h-4 w-auto animate-pulse text-gray-500 dark:text-white/80">
+        <div className="h-4 w-auto animate-pulse text-gray-500 dark:text-gray-100/80">
           Coming soon...
         </div>
       </div>
