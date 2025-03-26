@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../atoms/RevealOnScroll";
-import cvPdf from '../../assets/Miguel-AngelFernandezSotoCV.pdf';
+import cvPdf from "../../assets/Miguel-AngelFernandezSotoCV.pdf";
 
 export const Home = () => {
   return (
@@ -9,7 +9,7 @@ export const Home = () => {
     >
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 py-3 bg-gradient-to-br from-blue-500  to-emerald-600 bg-clip-text text-transparent leading-13 ">
+          <h1 className="text-5xl md:text-6xl font-bold mb-3 py-3 bg-gradient-to-br from-blue-500  to-emerald-600 bg-clip-text text-transparent leading-16">
             Hi, I'm Miguel Fernandez
           </h1>
           <p className="dark:text-gray-400 text-gray-500 text-md mb-8 max-w-xl mx-auto">

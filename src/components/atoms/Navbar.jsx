@@ -3,8 +3,6 @@ import logoWhite from "../../assets/MF_WHITE.svg";
 import logoAlter from "../../assets/MF_ALTER.svg";
 
 export const Navbar = ({ menuOpen, setMenuOpen, isDark, toggleDarkMode }) => {
-  const [activeSection, setActiveSection] = useState("home");
-
   const links = [
     { id: "home", label: "Home" },
     { id: "about", label: "About" },
@@ -15,25 +13,6 @@ export const Navbar = ({ menuOpen, setMenuOpen, isDark, toggleDarkMode }) => {
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
-
-  useEffect(() => {
-    const sections = document.querySelectorAll("section");
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.5, rootMargin: "0px 0px -50% 0px" }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <nav className="fixed top-0 w-full z-40 bg-transparent backdrop-blur-sm">
@@ -59,11 +38,7 @@ export const Navbar = ({ menuOpen, setMenuOpen, isDark, toggleDarkMode }) => {
               <a
                 key={link.id}
                 href={`#${link.id}`}
-                className={`${
-                  activeSection === link.id
-                    ? "text-blue-500"
-                    : "hover:text-blue-400"
-                }  transition-colors`}
+                className="hover:text-blue-500 transition-colors"
               >
                 {link.label}
               </a>
@@ -75,7 +50,7 @@ export const Navbar = ({ menuOpen, setMenuOpen, isDark, toggleDarkMode }) => {
             aria-label="Dark mode"
             onClick={toggleDarkMode}
             id="darkMode"
-            className="font-mono cursor-pointer"
+            className="font-mono cursor-pointer hover:text-blue-500 hover:bg-blue-500/50 hover:backdrop-blur-sm transition-all hover:rounded-full p-1"
           >
             {!isDark ? (
               <svg
