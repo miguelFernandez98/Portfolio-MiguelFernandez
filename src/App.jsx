@@ -26,7 +26,7 @@ function App() {
       <section
         className={`min-h-screen transition-all duration-700 ${
           isLoaded ? "opacity-100" : "opacity-0"
-        } bg-white dark:bg-[#0a0a0a] dark:text-gray-100 text-gray-900 `}
+        } bg-[#f3f4f6] dark:bg-[#0a0a0a] dark:text-gray-100 text-gray-800/90`}
       >
         <Toaster theme={isDark ? "dark" : "light"} richColors />
         <Navbar
