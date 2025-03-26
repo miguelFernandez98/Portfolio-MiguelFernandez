@@ -1,5 +1,5 @@
-import { RevealOnScroll } from "../RevealOnScroll";
-import { SkeletonLoader } from "../SkeletonLoader";
+import { RevealOnScroll } from "../atoms/RevealOnScroll";
+import { SkeletonLoader } from "../atoms/SkeletonLoader";
 
 export const Projects = () => {
   const projectsObject = [

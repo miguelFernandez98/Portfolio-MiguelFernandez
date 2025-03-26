@@ -1,4 +1,4 @@
-import { RevealOnScroll } from "../RevealOnScroll";
+import { RevealOnScroll } from "../atoms/RevealOnScroll";
 
 export const About = () => {
   const frontEndSkills = [

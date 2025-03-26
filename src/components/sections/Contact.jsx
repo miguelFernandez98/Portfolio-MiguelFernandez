@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { toast } from "sonner";
 import emailjs from "emailjs-com";
-import { RevealOnScroll } from "../RevealOnScroll";
+import { RevealOnScroll } from "../atoms/RevealOnScroll";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({

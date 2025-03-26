@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import "./App.css";
-import "./index.css";
-import { LoadingScreen } from "./components/LoadingScreen";
-import { Navbar } from "./components/Navbar";
-import { MobileMenu } from "./components/MobileMenu";
+import "./styles/App.css";
+import "./styles/index.css";
+import { LoadingScreen } from "./components/atoms/LoadingScreen";
+import { Navbar } from "./components/atoms/Navbar";
+import { MobileMenu } from "./components/atoms/MobileMenu";
 import { Home, About, Projects, Contact } from "./components/sections";
 import { Toaster } from "sonner";
 

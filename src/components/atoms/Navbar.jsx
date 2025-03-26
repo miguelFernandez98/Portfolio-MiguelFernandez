@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import logoWhite from "../assets/MF_WHITE.svg";
-import logoBlack from "../assets/MF_BLACK.svg";
-import logoAlter from "../assets/MF_ALTER.svg";
+import logoWhite from "../../assets/MF_WHITE.svg";
+import logoAlter from "../../assets/MF_ALTER.svg";
 
 export const Navbar = ({ menuOpen, setMenuOpen, isDark, toggleDarkMode }) => {
   const [activeSection, setActiveSection] = useState("home");
