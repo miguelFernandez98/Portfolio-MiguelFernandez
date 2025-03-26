@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import logo from "../assets/MF.svg";
+import logoWhite from "../assets/MF_WHITE.svg";
+import logoBlack from "../assets/MF_BLACK.svg";
+import logoAlter from "../assets/MF_ALTER.svg";
 
 export const Navbar = ({ menuOpen, setMenuOpen, isDark, toggleDarkMode }) => {
   const [activeSection, setActiveSection] = useState("home");
@@ -26,7 +28,7 @@ export const Navbar = ({ menuOpen, setMenuOpen, isDark, toggleDarkMode }) => {
           }
         });
       },
-      { threshold: 0.1, rootMargin: "0px 0px -60% 0px" }
+      { threshold: 0.5, rootMargin: "0px 0px -50% 0px" }
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -39,7 +41,11 @@ export const Navbar = ({ menuOpen, setMenuOpen, isDark, toggleDarkMode }) => {
       <section className="max-w-xl mx-auto px-6 py-2 flex justify-between items-center">
         <div>
           <a className="font-mono">
-            <img className="h-5 w-auto" src={logo} alt="Logo staff" />
+            <img
+              className="h-5 w-auto"
+              src={isDark ? logoWhite : logoAlter}
+              alt="Logo staff"
+            />
           </a>
         </div>
         <div className="flex justify-center items-center h-12 py-3 px-3 md:px-6 md:backdrop-blur-sm md:border md:border-white/20 md:shadow-lg md:rounded-full">
