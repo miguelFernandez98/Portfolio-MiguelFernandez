@@ -1,7 +1,10 @@
 import { RevealOnScroll } from "../atoms/RevealOnScroll";
 import cvPdf from "../../assets/Miguel-AngelFernandezSotoCV.pdf";
+import { translations } from "../../composables/translations";
 
-export const Home = () => {
+export const Home = ({ isSpanish }) => {
+  const { title, description } = translations.home;
+  const currentLang = isSpanish ? "es" : "en";
   return (
     <section
       id="home"
@@ -10,14 +13,12 @@ export const Home = () => {
       <RevealOnScroll>
         <div className="text-center z-10 px-4">
           <h1 className="text-5xl md:text-6xl font-bold mb-3 py-3 bg-gradient-to-br from-blue-500  to-emerald-600 bg-clip-text text-transparent leading-16">
-            Hi, I'm Miguel Fernandez
+            {title[currentLang]}
           </h1>
           <p className="dark:text-gray-400 text-gray-500 text-md mb-8 max-w-xl mx-auto">
-            I'm systems engineer, with a focus on front-end development,
-            creating interactive and responsive user interfaces, and building
-            scalable systems with expertise in APIs and clean code.
+            {description[currentLang]}
           </p>
-          <div className="flex justify-center space-x-5">
+          <div className="flex justify-center space-x-6">
             <a
               href="https://www.linkedin.com/in/miguel-angel-fernandez-soto-06b8b9252/"
               target="_blank"

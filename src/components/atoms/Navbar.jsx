@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import logoWhite from "../../assets/MF_WHITE.svg";
 import logoAlter from "../../assets/MF_ALTER.svg";
 
@@ -26,9 +26,9 @@ export const Navbar = ({ menuOpen, setMenuOpen, isDark, toggleDarkMode }) => {
             />
           </a>
         </div>
-        <div className="flex justify-center items-center h-12 py-3 px-3 md:px-6 md:backdrop-blur-sm md:border md:border-white/20 md:shadow-lg md:rounded-full">
+        <div className="flex justify-center items-center h-12 p-3 md:px-6 md:backdrop-blur-sm md:border md:border-white/20 md:shadow-lg md:rounded-full">
           <div
-            className="w-7 h-5 relative text-center cursor-pointer z-40 md:hidden"
+            className=" relative text-center cursor-pointer z-40 md:hidden"
             onClick={() => setMenuOpen((prev) => !prev)}
           >
             ☰

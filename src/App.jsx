@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./styles/App.css";
 import "./styles/index.css";
+import { TranslateButton } from "./components/atoms/TranslateButton";
 import { LoadingScreen } from "./components/atoms/LoadingScreen";
 import { Navbar } from "./components/atoms/Navbar";
 import { MobileMenu } from "./components/atoms/MobileMenu";
@@ -11,6 +12,12 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isDark, setIsDark] = useState(true);
+  const [isSpanish, setIsSpanish] = useState(() => {
+    const savedLang = localStorage.getItem("preferredLang");
+    return savedLang !== null
+      ? savedLang === "es"
+      : navigator.language.startsWith("es");
+  });
 
   useEffect(() => {
     if (isDark) {
@@ -22,7 +29,7 @@ function App() {
 
   return (
     <>
-      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}{" "}
+      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
       <section
         className={`min-h-screen transition-all duration-700 ${
           isLoaded ? "opacity-100" : "opacity-0"
@@ -34,17 +41,20 @@ function App() {
           setMenuOpen={setMenuOpen}
           isDark={isDark}
           toggleDarkMode={() => setIsDark(!isDark)}
+          isSpanish={isSpanish}
         />
         <MobileMenu
           menuOpen={menuOpen}
           setMenuOpen={setMenuOpen}
           isDark={isDark}
           toggleDarkMode={() => setIsDark(!isDark)}
+          isSpanish={isSpanish}
         />
-        <Home isDark={isDark} />
-        <About isDark={isDark} />
-        <Projects isDark={isDark} />
-        <Contact isDark={isDark} />
+        <Home isDark={isDark} isSpanish={isSpanish} />
+        <About isDark={isDark} isSpanish={isSpanish} />
+        <Projects isDark={isDark} isSpanish={isSpanish} />
+        <Contact isDark={isDark} isSpanish={isSpanish} />
+        <TranslateButton setIsSpanish={setIsSpanish} isSpanish={isSpanish} />
       </section>
     </>
   );

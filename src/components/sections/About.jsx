@@ -61,7 +61,7 @@ export const About = () => {
                   {frontEndSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className="bg-blue-500/50 text-blue-500 py-1 px-3 rounded-3xl text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
+                      className="bg-blue-500/50 text-blue-500 hover:bg-blue-500/20 py-1 px-3 rounded-3xl text-sm  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
                     >
                       {tech}
                     </span>
