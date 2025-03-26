@@ -1,6 +1,9 @@
 import { RevealOnScroll } from "../atoms/RevealOnScroll";
+import { translations } from "../../composables/translations";
 
-export const About = () => {
+export const About = ({ isSpanish }) => {
+  const { title } = translations.about;
+  const currentLang = isSpanish ? "es" : "en";
   const frontEndSkills = [
     "Javascript",
     "Typescript",
@@ -44,7 +47,7 @@ export const About = () => {
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-br from-blue-500 to-emerald-600 text-center bg-clip-text text-transparent">
-            About Me
+            {title[currentLang]}
           </h2>
           <article className="rounded-4xl p-8 border border-gray-400/20 dark:border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
             <p className="text-gray-500 dark:text-gray-400 mb-6 text-center">

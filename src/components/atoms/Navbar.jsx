@@ -1,14 +1,17 @@
 import { useEffect } from "react";
 import logoWhite from "../../assets/MF_WHITE.svg";
 import logoAlter from "../../assets/MF_ALTER.svg";
+import { translations } from "../../composables/translations";
 
-export const Navbar = ({ menuOpen, setMenuOpen, isDark, toggleDarkMode }) => {
-  const links = [
-    { id: "home", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "projects", label: "Projects" },
-    { id: "contact", label: "Contact" },
-  ];
+export const Navbar = ({
+  menuOpen,
+  setMenuOpen,
+  isDark,
+  toggleDarkMode,
+  isSpanish,
+}) => {
+  const { navBar } = translations;
+  const currentLang = isSpanish ? "es" : "en";
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
@@ -34,7 +37,7 @@ export const Navbar = ({ menuOpen, setMenuOpen, isDark, toggleDarkMode }) => {
             ☰
           </div>
           <div className="hidden md:flex items-center space-x-9">
-            {links.map((link) => (
+            {navBar[currentLang].map((link) => (
               <a
                 key={link.id}
                 href={`#${link.id}`}
