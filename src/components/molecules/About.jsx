@@ -2,7 +2,7 @@ import { RevealOnScroll } from "../atoms/RevealOnScroll";
 import { translations } from "../../lib/constants/translations";
 
 export const About = ({ isSpanish }) => {
-  const { title, description, subtitle } = translations.about;
+  const { title, description, subtitle, workExperience } = translations.about;
   const currentLang = isSpanish ? "es" : "en";
 
   const frontEndSkills = [
@@ -16,7 +16,7 @@ export const About = ({ isSpanish }) => {
 
   const backEndSkills = ["Node.js", "Express", "MongoDB", "Docker"];
 
-  const workExperience = [
+  /*   const workExperience = [
     {
       position: "Frontend developer",
       company: "OMNINEXO - WAIKERI HITECH",
@@ -38,7 +38,7 @@ export const About = ({ isSpanish }) => {
       description:
         "Improved an outdated mobile app by resolving errors and enhancing functionality through design changes.",
     },
-  ];
+  ]; */
 
   return (
     <section
@@ -94,7 +94,7 @@ export const About = ({ isSpanish }) => {
                 {subtitle[currentLang]}
               </h3>
               <ul role="list" className="m-4 max-w-screen-md">
-                {workExperience.map((job, index) => (
+                {workExperience[currentLang].map((job, index) => (
                   <li
                     key={index}
                     className="group relative flex flex-col pb-8 pl-7 last:pb-0"
