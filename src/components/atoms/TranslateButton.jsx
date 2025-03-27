@@ -10,7 +10,7 @@ export const TranslateButton = ({ setIsSpanish }) => {
   return (
     <button
       onClick={toggleLanguage}
-      className="fixed cursor-pointer bottom-4 right-4 z-40 p-3 bg-blue-500/40 text-blue-500 hover:bg-blue-500/30 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+      className="fixed cursor-pointer bottom-4 right-4 z-40 p-3 dark:bg-blue-500/50 bg-blue-500/40 dark:text-blue-500 text-blue-500 dark:hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] hover:bg-blue-500/30  rounded-full shadow-lg transition-all duration-300 hover:scale-110"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -1,9 +1,10 @@
 import { RevealOnScroll } from "../atoms/RevealOnScroll";
-import { translations } from "../../composables/translations";
+import { translations } from "../../lib/constants/translations";
 
 export const About = ({ isSpanish }) => {
-  const { title } = translations.about;
+  const { title, description, subtitle } = translations.about;
   const currentLang = isSpanish ? "es" : "en";
+
   const frontEndSkills = [
     "Javascript",
     "Typescript",
@@ -51,9 +52,7 @@ export const About = ({ isSpanish }) => {
           </h2>
           <article className="rounded-4xl p-8 border border-gray-400/20 dark:border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
             <p className="text-gray-500 dark:text-gray-400 mb-6 text-center">
-              Experienced frontend developer with backend basics. Adaptable to
-              new technologies and continuous learner.{" "}
-              <strong>University of Margarita graduate 2017-2022 </strong>.
+              {description[currentLang]}
             </p>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <li className="rounded-4xl p-6 hover:-translate-y-1 transition-all">
@@ -64,7 +63,7 @@ export const About = ({ isSpanish }) => {
                   {frontEndSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className="bg-blue-500/50 text-blue-500 hover:bg-blue-500/20 py-1 px-3 rounded-3xl text-sm  hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
+                      className="dark:bg-blue-500/50 bg-blue-500/40 dark:text-blue-500 text-blue-500 py-1 px-3 rounded-3xl text-sm dark:hover:bg-blue-500/20 hover:bg-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
                     >
                       {tech}
                     </span>
@@ -79,7 +78,7 @@ export const About = ({ isSpanish }) => {
                   {backEndSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className="bg-blue-500/50 text-blue-500 py-1 px-3 rounded-3xl text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"
+                      className="dark:bg-blue-500/50 bg-blue-500/40 dark:text-blue-500 text-blue-500 dark:hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] hover:bg-blue-500/30  py-1 px-3 rounded-3xl text-sm  transition"
                     >
                       {tech}
                     </span>
@@ -92,7 +91,7 @@ export const About = ({ isSpanish }) => {
           <div className="flex justify-center items-center gap-6 mt-8">
             <article className="p-6 rounded-4xl border border-gray-400/20 dark:border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
               <h3 className="text-xl font-bold mb-6 text-gray-800/90 dark:text-gray-100">
-                Work Experience
+                {subtitle[currentLang]}
               </h3>
               <ul role="list" className="m-4 max-w-screen-md">
                 {workExperience.map((job, index) => (

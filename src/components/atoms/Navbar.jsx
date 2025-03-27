@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import logoWhite from "../../assets/MF_WHITE.svg";
 import logoAlter from "../../assets/MF_ALTER.svg";
-import { translations } from "../../composables/translations";
+import { translations } from "../../lib/constants/translations";
 
 export const Navbar = ({
   menuOpen,

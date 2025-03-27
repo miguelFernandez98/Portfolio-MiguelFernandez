@@ -5,7 +5,10 @@ import { TranslateButton } from "./components/atoms/TranslateButton";
 import { LoadingScreen } from "./components/atoms/LoadingScreen";
 import { Navbar } from "./components/atoms/Navbar";
 import { MobileMenu } from "./components/atoms/MobileMenu";
-import { Home, About, Projects, Contact } from "./components/sections";
+import { Home } from "./components/molecules/Home";
+import { About } from "./components/molecules/About";
+import { Contact } from "./components/molecules/Contact";
+import { Projects } from "./components/molecules/Projects";
 import { Toaster } from "sonner";
 
 function App() {
