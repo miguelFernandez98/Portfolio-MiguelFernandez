@@ -16,8 +16,8 @@ export const translations = {
 
   home: {
     title: {
-      en: "Hi, I'm Miguel Fernandez",
-      es: "Hola, soy Miguel Fernandez",
+      en: "Hi, I'm Miguel Fernández",
+      es: "Hola, soy Miguel Fernández",
     },
     description: {
       en: "I am a systems engineer specialized in frontend development, with 3 years of experience building web and mobile applications to streamline processes and enhance user experience.",
@@ -153,6 +153,10 @@ export const translations = {
     button: {
       en: "Send Message",
       es: "Enviar mensaje",
+    },
+    skeletonTranslate: {
+      en: "Coming soon...",
+      es: "Próximamente...",
     },
   },
 };
