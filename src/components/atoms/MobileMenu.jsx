@@ -31,12 +31,7 @@ export const MobileMenu = ({
           id="darkMode"
         >
           {!isDark ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="0.90em"
-              height="0.90em"
-              viewBox="0 0 24 24"
-            >
+            <svg width="0.90em" height="0.90em" viewBox="0 0 24 24">
               <path
                 fill="none"
                 stroke="currentColor"
@@ -47,12 +42,7 @@ export const MobileMenu = ({
               />
             </svg>
           ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="0.90em"
-              height="0.90em"
-              viewBox="0 0 24 24"
-            >
+            <svg width="0.90em" height="0.90em" viewBox="0 0 24 24">
               <path
                 fill="none"
                 stroke="currentColor"

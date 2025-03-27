@@ -13,6 +13,7 @@ export const translations = {
       { id: "contact", label: "Contacto" },
     ],
   },
+
   home: {
     title: {
       en: "Hi, I'm Miguel Fernandez",
@@ -23,6 +24,7 @@ export const translations = {
       es: "Soy ingeniero de sistemas especializado en desarrollo frontend, con 3 años de experiencia desarrollando aplicaciones web y móviles para optimizar procesos y mejorar la experiencia de usuario.",
     },
   },
+
   about: {
     title: {
       en: "About me",
@@ -83,6 +85,32 @@ export const translations = {
             "Trabajé en equipo para el desarrollo de aplicativos web que soportaban y mejoraban la experiencia de usuario en la empresa, tales como aplicativos de nómina, cuadre de caja, entre otros.",
         },
       ],
+    },
+  },
+
+  projects: {
+    title: {
+      en: "Projects",
+      es: "Proyectos",
+    },
+    descriptions: {
+      en: "",
+      es: "",
+    },
+    subtitles: {
+      en: "",
+      es: "",
+    },
+  },
+
+  Contact: {
+    title: {
+      en: "Projects",
+      es: "Proyectos",
+    },
+    subtitles: {
+      en: "",
+      es: "",
     },
   },
 };

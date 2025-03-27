@@ -27,7 +27,7 @@ export const Projects = () => {
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-br from-blue-500 to-emerald-600 text-center bg-clip-text text-transparent">
-            Featured Projects
+            Projects
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {projectsObject.map((project, key) => (

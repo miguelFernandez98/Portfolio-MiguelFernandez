@@ -16,30 +16,6 @@ export const About = ({ isSpanish }) => {
 
   const backEndSkills = ["Node.js", "Express", "MongoDB", "Docker"];
 
-  /*   const workExperience = [
-    {
-      position: "Frontend developer",
-      company: "OMNINEXO - WAIKERI HITECH",
-      period: "2024 - Present",
-      description:
-        "Developing mobile and web applications to optimize business management and operations.",
-    },
-    {
-      position: "Development specialist",
-      company: "INSIDE MARKET/RIO SUPERMARKET",
-      period: "2022 - 2024",
-      description:
-        "Developed applications to enhance company efficiency and user experience, including scheduling and reconciliation tools.",
-    },
-    {
-      position: "Development analyst",
-      company: "GUUAO/LEIROS",
-      period: "2023 - 2023",
-      description:
-        "Improved an outdated mobile app by resolving errors and enhancing functionality through design changes.",
-    },
-  ]; */
-
   return (
     <section
       id="about"

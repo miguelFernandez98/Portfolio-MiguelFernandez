@@ -57,7 +57,6 @@ export const Navbar = ({
           >
             {!isDark ? (
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 width="1.4em"
                 height="1.4em"
                 viewBox="0 0 24 24"
@@ -73,7 +72,6 @@ export const Navbar = ({
               </svg>
             ) : (
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 width="1.4em"
                 height="1.4em"
                 viewBox="0 0 24 24"
