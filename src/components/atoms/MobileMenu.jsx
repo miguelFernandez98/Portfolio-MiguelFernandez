@@ -1,15 +1,14 @@
+import { translations } from "../../lib/constants/translations";
+
 export const MobileMenu = ({
   menuOpen,
   setMenuOpen,
   isDark,
   toggleDarkMode,
+  isSpanish,
 }) => {
-  const links = [
-    { id: "home", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "projects", label: "Projects" },
-    { id: "contact", label: "Contact" },
-  ];
+  const { navBar } = translations;
+  const currentLang = isSpanish ? "es" : "en";
 
   const handleDarkMode = () => {
     toggleDarkMode();
@@ -62,7 +61,7 @@ export const MobileMenu = ({
           &times;
         </button>
       </div>
-      {links.map((link) => (
+      {navBar[currentLang].map((link) => (
         <a
           key={link.id}
           href={`#${link.id}`}

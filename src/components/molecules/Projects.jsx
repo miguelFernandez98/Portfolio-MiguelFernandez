@@ -1,23 +1,10 @@
 import { RevealOnScroll } from "../atoms/RevealOnScroll";
 import { SkeletonLoader } from "../atoms/SkeletonLoader";
+import { translations } from "../../lib/constants/translations";
 
-export const Projects = () => {
-  const projectsObject = [
-    {
-      title: "Landing page (Wowdeck)",
-      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-      tech: ["Html/Css", "Javascript"],
-      link: "https://wow-deck.com/",
-    },
-    {
-      title: "Node-auth",
-      description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-      tech: ["Node.js", "Typescript", "MongoDB"],
-      link: "https://github.com/miguelFernandez98/Node-auth",
-    },
-    {},
-    {},
-  ];
+export const Projects = ({ isSpanish }) => {
+  const { title, subtitles, myProjects } = translations.projects;
+  const currentLang = isSpanish ? "es" : "en";
 
   return (
     <section
@@ -27,10 +14,10 @@ export const Projects = () => {
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-br from-blue-500 to-emerald-600 text-center bg-clip-text text-transparent">
-            Projects
+            {title[currentLang]}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {projectsObject.map((project, key) => (
+            {myProjects[currentLang].map((project, key) => (
               <article
                 key={key}
                 className="p-6 rounded-4xl border border-gray-400/20 dark:border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
@@ -61,7 +48,7 @@ export const Projects = () => {
                         target="_blank"
                         className="text-blue-400 hover:text-blue-300 transition-colors mt-4"
                       >
-                        View Project →
+                        {subtitles[currentLang]} →
                       </a>
                     </div>
                   </>

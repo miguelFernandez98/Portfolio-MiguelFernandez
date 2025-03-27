@@ -93,24 +93,66 @@ export const translations = {
       en: "Projects",
       es: "Proyectos",
     },
-    descriptions: {
-      en: "",
-      es: "",
+    myProjects: {
+      en: [
+        {
+          title: "Landing page (Wowdeck)",
+          description:
+            "Design and development of a modern and attractive corporate landing page, tailored to a specific client's needs.",
+          tech: ["Html/Css", "Javascript"],
+          link: "https://wow-deck.com/",
+        },
+        {
+          title: "Node-auth",
+          description:
+            "Development of an authentication API, designed to meet learning goals.",
+          tech: ["Node.js", "Typescript", "MongoDB"],
+          link: "https://github.com/miguelFernandez98/Node-auth",
+        },
+        {},
+        {},
+      ],
+      es: [
+        {
+          title: "Landing page (Wowdeck)",
+          description:
+            "Diseño y desarrollo de una landing page empresarial moderna y atractiva, creada a medida para un cliente específico.",
+          tech: ["Html/Css", "Javascript"],
+          link: "https://wow-deck.com/",
+        },
+        {
+          title: "Node-auth",
+          description:
+            "Desarrollo de una api de autenticación, elaborado con objetivos de aprendizaje.",
+          tech: ["Node.js", "Typescript", "MongoDB"],
+          link: "https://github.com/miguelFernandez98/Node-auth",
+        },
+        {},
+        {},
+      ],
     },
     subtitles: {
-      en: "",
-      es: "",
+      en: "View Project",
+      es: "Ver Proyecto",
     },
   },
 
-  Contact: {
+  contact: {
     title: {
-      en: "Projects",
-      es: "Proyectos",
+      en: "Contact me",
+      es: "Contácteme",
     },
-    subtitles: {
-      en: "",
-      es: "",
+    name: {
+      en: "Name...",
+      es: "Nombre...",
+    },
+    message: {
+      en: "Your Message...",
+      es: "Tu mensaje...",
+    },
+    button: {
+      en: "Send Message",
+      es: "Enviar mensaje",
     },
   },
 };
