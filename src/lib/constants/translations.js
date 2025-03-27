@@ -62,7 +62,7 @@ export const translations = {
       ],
       es: [
         {
-          position: "Frontend developer",
+          position: "Desarrollador frontend",
           company: "OMNINEXO - WAIKERI HITECH",
           period: "2024 - Presente",
           description:
