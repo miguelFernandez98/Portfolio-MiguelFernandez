@@ -47,7 +47,7 @@ export const Contact = ({ isSpanish }) => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <RevealOnScroll>
-        <div className="px-4 w-full min-w-[300px] md:w-[500px] sm:w-2/3 p-6">
+        <div className="w-full min-w-[300px] md:w-[500px] sm:w-2/3">
           <h2 className="text-3xl font-bold mb-8 bg-gradient-to-br from-blue-500 to-emerald-600 text-center bg-clip-text text-transparent">
             {" "}
             {title[currentLang]}
