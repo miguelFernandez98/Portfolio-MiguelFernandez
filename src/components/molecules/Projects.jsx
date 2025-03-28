@@ -32,11 +32,11 @@ export const Projects = ({ isSpanish }) => {
                     <p className="text-gray-500 dark:text-gray-400 mb-4">
                       {project.description}
                     </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
+                    <div className="flex flex-wrap gap-2 mb-2">
                       {project.tech.map((tech, techKey) => (
                         <span
                           key={techKey}
-                          className="bg-blue-500/50 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
+                          className="bg-blue-500/10 text-blue-500 hover:bg-blue-500/30 py-1 px-3 rounded-full text-sm hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
                         >
                           {tech}
                         </span>

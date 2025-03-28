@@ -29,7 +29,7 @@ export const Navbar = ({
             />
           </a>
         </div>
-        <div className="flex justify-center items-center h-12 p-3 md:px-6 md:backdrop-blur-sm md:border md:border-white/20 md:shadow-lg md:rounded-full">
+        <div className="flex justify-center items-center h-12 p-3 md:px-6 md:border bg-transparent md:border-white/20 md:shadow-lg md:rounded-full">
           <div
             className=" relative text-center cursor-pointer z-40 md:hidden"
             onClick={() => setMenuOpen((prev) => !prev)}
@@ -53,14 +53,10 @@ export const Navbar = ({
             aria-label="Dark mode"
             onClick={toggleDarkMode}
             id="darkMode"
-            className="font-mono cursor-pointer hover:text-blue-500 hover:bg-blue-500/50 hover:backdrop-blur-sm transition-all hover:rounded-full p-1"
+            className="font-mono cursor-pointer hover:text-blue-500 hover:bg-blue-500/10 hover:backdrop-blur-sm transition-all hover:rounded-full p-1"
           >
             {!isDark ? (
-              <svg
-                width="1.4em"
-                height="1.4em"
-                viewBox="0 0 24 24"
-              >
+              <svg width="1.4em" height="1.4em" viewBox="0 0 24 24">
                 <path
                   fill="none"
                   stroke="currentColor"
@@ -71,11 +67,7 @@ export const Navbar = ({
                 />
               </svg>
             ) : (
-              <svg
-                width="1.4em"
-                height="1.4em"
-                viewBox="0 0 24 24"
-              >
+              <svg width="1.4em" height="1.4em" viewBox="0 0 24 24">
                 <path
                   fill="none"
                   stroke="currentColor"

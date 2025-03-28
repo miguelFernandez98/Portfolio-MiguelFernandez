@@ -31,8 +31,8 @@ export const translations = {
       es: "Sobre mí",
     },
     description: {
-      en: "I am a frontend developer working from Nueva Esparta, Venezuela. A graduate of the University of Margarita (2017 - 2022), I have experience in various areas related to development and databases, knowledge gained after working on diverse software development teams.",
-      es: "Soy un desarrollador frontend que trabaja desde Nueva Esparta, Venezuela. Egresado de la Universidad de Margarita (2017 - 2022), tengo experiencia en diversas áreas relacionadas con el desarrollo y bases de datos, conocimiento obtenido después de trabajar en diversos equipos de desarrollo de software.",
+      en: "I am a frontend developer working from Nueva Esparta, Venezuela. A graduate of the University of Margarita 2017 - 2022, I have experience in various areas related to development and databases, knowledge gained after working on diverse software development teams.",
+      es: "Soy un desarrollador frontend que trabaja desde Nueva Esparta, Venezuela. Egresado de la Universidad de Margarita 2017 - 2022, tengo experiencia en diversas áreas relacionadas con el desarrollo y bases de datos, conocimiento obtenido después de trabajar en diversos equipos de desarrollo de software.",
     },
     subtitle: {
       en: "Work Experience",
@@ -98,8 +98,8 @@ export const translations = {
         {
           title: "Landing page (Wowdeck)",
           description:
-            "Design and development of a modern and attractive corporate landing page, tailored to a specific client's needs.",
-          tech: ["Html/Css", "Javascript"],
+            "Design and development of a modern and attractive corporate landing page.",
+          tech: ["HTML/CSS", "Javascript"],
           link: "https://wow-deck.com/",
         },
         {
@@ -116,7 +116,7 @@ export const translations = {
         {
           title: "Landing page (Wowdeck)",
           description:
-            "Diseño y desarrollo de una landing page empresarial moderna y atractiva, creada a medida para un cliente específico.",
+            "Diseño y desarrollo de una landing page empresarial moderna y atractiva.",
           tech: ["Html/Css", "Javascript"],
           link: "https://wow-deck.com/",
         },
@@ -139,8 +139,8 @@ export const translations = {
 
   contact: {
     title: {
-      en: "Contact me",
-      es: "Contácteme",
+      en: "Contact",
+      es: "Contacto",
     },
     name: {
       en: "Name...",

@@ -93,6 +93,7 @@ export const Contact = ({ isSpanish }) => {
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })
                 }
+                style={{ resize: "none" }}
               />
             </div>
             <button
