@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../atoms/RevealOnScroll";
-import { translations } from "../../lib/constants/translations";
+import { translations } from "../../lib/constants/translationAbout";
 
 export const About = ({ isSpanish }) => {
   const { title, description, subtitle, workExperience } = translations.about;

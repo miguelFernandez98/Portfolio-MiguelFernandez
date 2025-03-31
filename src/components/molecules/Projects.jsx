@@ -1,6 +1,6 @@
 import { RevealOnScroll } from "../atoms/RevealOnScroll";
 import { SkeletonLoader } from "../atoms/SkeletonLoader";
-import { translations } from "../../lib/constants/translations";
+import { translations } from "../../lib/constants/translationsProjects";
 
 export const Projects = ({ isSpanish }) => {
   const { title, subtitles, myProjects } = translations.projects;

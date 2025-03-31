@@ -1,6 +1,6 @@
 import { RevealOnScroll } from "../atoms/RevealOnScroll";
 import cvPdf from "../../assets/Miguel-AngelFernandezSotoCV.pdf";
-import { translations } from "../../lib/constants/translations";
+import { translations } from "../../lib/constants/translationsHome";
 
 export const Home = ({ isSpanish }) => {
   const { title, description } = translations.home;

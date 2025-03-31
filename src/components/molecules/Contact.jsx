@@ -2,7 +2,7 @@ import { useState } from "react";
 import { toast } from "sonner";
 import emailjs from "emailjs-com";
 import { RevealOnScroll } from "../atoms/RevealOnScroll";
-import { translations } from "../../lib/constants/translations";
+import { translations } from "../../lib/constants/translationsContact";
 
 export const Contact = ({ isSpanish }) => {
   const { title, name, message, button } = translations.contact;

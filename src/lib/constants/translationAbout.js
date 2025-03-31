@@ -1,30 +1,4 @@
 export const translations = {
-  navBar: {
-    en: [
-      { id: "home", label: "Home" },
-      { id: "about", label: "About" },
-      { id: "projects", label: "Projects" },
-      { id: "contact", label: "Contact" },
-    ],
-    es: [
-      { id: "home", label: "Inicio" },
-      { id: "about", label: "Sobre mí" },
-      { id: "projects", label: "Proyectos" },
-      { id: "contact", label: "Contacto" },
-    ],
-  },
-
-  home: {
-    title: {
-      en: "Hi, I'm Miguel Fernández",
-      es: "Hola, soy Miguel Fernández",
-    },
-    description: {
-      en: "I am a systems engineer specialized in frontend development, with 3 years of experience building web and mobile applications to streamline processes and enhance user experience.",
-      es: "Soy ingeniero de sistemas especializado en desarrollo frontend, con 3 años de experiencia desarrollando aplicaciones web y móviles para optimizar procesos y mejorar la experiencia de usuario.",
-    },
-  },
-
   about: {
     title: {
       en: "About me",
@@ -85,78 +59,6 @@ export const translations = {
             "Trabajé en equipo para el desarrollo de aplicativos web que soportaban y mejoraban la experiencia de usuario en la empresa, tales como aplicativos de nómina, cuadre de caja, entre otros.",
         },
       ],
-    },
-  },
-
-  projects: {
-    title: {
-      en: "Projects",
-      es: "Proyectos",
-    },
-    myProjects: {
-      en: [
-        {
-          title: "Landing page (Wowdeck)",
-          description:
-            "Design and development of a modern and attractive corporate landing page.",
-          tech: ["HTML/CSS", "Javascript"],
-          link: "https://wow-deck.com/",
-        },
-        {
-          title: "Node-auth",
-          description:
-            "Development of an authentication API, designed to meet learning goals.",
-          tech: ["Node.js", "Typescript", "MongoDB"],
-          link: "https://github.com/miguelFernandez98/Node-auth",
-        },
-        {},
-        {},
-      ],
-      es: [
-        {
-          title: "Landing page (Wowdeck)",
-          description:
-            "Diseño y desarrollo de una landing page empresarial moderna y atractiva.",
-          tech: ["Html/Css", "Javascript"],
-          link: "https://wow-deck.com/",
-        },
-        {
-          title: "Node-auth",
-          description:
-            "Desarrollo de una api de autenticación, elaborado con objetivos de aprendizaje.",
-          tech: ["Node.js", "Typescript", "MongoDB"],
-          link: "https://github.com/miguelFernandez98/Node-auth",
-        },
-        {},
-        {},
-      ],
-    },
-    subtitles: {
-      en: "View Project",
-      es: "Ver Proyecto",
-    },
-  },
-
-  contact: {
-    title: {
-      en: "Contact",
-      es: "Contacto",
-    },
-    name: {
-      en: "Name...",
-      es: "Nombre...",
-    },
-    message: {
-      en: "Your Message...",
-      es: "Tu mensaje...",
-    },
-    button: {
-      en: "Send Message",
-      es: "Enviar mensaje",
-    },
-    skeletonTranslate: {
-      en: "Coming soon...",
-      es: "Próximamente...",
     },
   },
 };

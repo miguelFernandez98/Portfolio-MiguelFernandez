@@ -1,4 +1,4 @@
-import { translations } from "../../lib/constants/translations";
+import { translations } from "../../lib/constants/translationsNabar";
 
 export const MobileMenu = ({
   menuOpen,
