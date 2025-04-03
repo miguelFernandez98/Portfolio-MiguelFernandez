@@ -46,7 +46,7 @@ export const Projects = ({ isSpanish }) => {
                       <a
                         href={project.link}
                         target="_blank"
-                        className="text-blue-400 hover:text-blue-300 transition-colors mt-4"
+                        className="text-blue-500 hover:text-blue-400 transition-colors mt-4"
                       >
                         {subtitles[currentLang]} →
                       </a>
