@@ -28,7 +28,7 @@ export const translations = {
           title: "Landing page (Wowdeck)",
           description:
             "Diseño y desarrollo de una landing page empresarial moderna y atractiva.",
-          tech: ["Html/Css", "Javascript"],
+          tech: ["HTML/CSS", "Javascript"],
           link: "https://wow-deck.com/",
         },
         {
