@@ -23,7 +23,9 @@ export const Projects = ({ isSpanish }) => {
                 className="p-6 rounded-4xl border border-gray-400/20 dark:border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all"
               >
                 {Object.keys(project).length === 0 ? (
-                  <SkeletonLoader />
+                  <SkeletonLoader
+                    text={currentLang === "en" ? "Coming soon" : "Próximamente"}
+                  />
                 ) : (
                   <>
                     <h3 className="text-xl font-bold mb-2 text-gray-800/90 dark:text-gray-100">
