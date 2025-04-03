@@ -17,13 +17,13 @@ export const MobileMenu = ({
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.8)] z-50 flex flex-col items-center justify-center transition-all duration-300 ease-in-out ${
+      className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.91)] z-50 flex flex-col items-center justify-center transition-all duration-300 ease-in-out ${
         menuOpen
           ? "h-screen opacity-100 pointer-events-auto"
           : "h-0 opacity-0 pointer-events-none"
       }`}
     >
-      <div className="absolute top-0 mt-5 flex items-center w-full justify-between px-10">
+      <div className="absolute top-0 max-w-xl w-full mx-auto px-6 py-2 mt-2 flex justify-between items-center">
         <button
           className="text-gray-100 text-3xl focus:outline-none cursor-pointer"
           onClick={handleDarkMode}
