@@ -31,11 +31,11 @@ export const About = ({ isSpanish }) => {
               {description[currentLang]}
             </p>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <li className="rounded-4xl py-6 hover:-translate-y-1 transition-all flex flex-col justify-center items-center">
+              <li className="rounded-4xl py-6 hover:-translate-y-1 transition-all flex flex-col justify-center items-start">
                 <h3 className="text-xl font-bold mb-4 text-gray-800/90 dark:text-gray-100">
                   Frontend
                 </h3>
-                <div className="flex flex-wrap justify-center items-center gap-2">
+                <div className="flex flex-wrap justify-start items-center gap-2">
                   {frontEndSkills.map((tech, key) => (
                     <span
                       key={key}
@@ -46,11 +46,11 @@ export const About = ({ isSpanish }) => {
                   ))}
                 </div>
               </li>
-              <li className="rounded-4xl py-6 hover:-translate-y-1 transition-all flex flex-col justify-center items-center">
+              <li className="rounded-4xl py-6 hover:-translate-y-1 transition-all flex flex-col justify-center items-start">
                 <h3 className="text-xl font-bold mb-4 text-gray-800/90 dark:text-gray-100">
                   Backend
                 </h3>
-                <div className="flex flex-wrap justify-center items-center gap-2">
+                <div className="flex flex-wrap justify-start items-center gap-2">
                   {backEndSkills.map((tech, key) => (
                     <span
                       key={key}
