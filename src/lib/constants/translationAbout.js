@@ -17,7 +17,7 @@ export const translations = {
         {
           position: "Frontend developer",
           company: "OMNINEXO - WAIKERI HITECH",
-          period: "2024 - Present",
+          period: "2024 - 2025",
           description:
             "I have been responsible for developing mobile and web applications to optimize business and operational management, such as inventory management and product information visualization.",
         },
@@ -40,7 +40,7 @@ export const translations = {
         {
           position: "Desarrollador frontend",
           company: "OMNINEXO - WAIKERI HITECH",
-          period: "2024 - Presente",
+          period: "2024 - 2025",
           description:
             "Me he encargado de desarrollar aplicaciones móviles y web para optimizar la gestión empresarial y operativa, como la toma de inventario y la visualización de información de productos.",
         },
