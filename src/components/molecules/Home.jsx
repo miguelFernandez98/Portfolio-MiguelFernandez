@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../atoms/RevealOnScroll";
-import cvPdf from "../../assets/MiguelAngelFernandez-FrontendDeveloper.docx";
+import cvPdf from "../../assets/MiguelAngelFernandez-FrontendDeveloper.pdf";
 import { translations } from "../../lib/constants/translationsHome";
 
 export const Home = ({ isSpanish }) => {
@@ -46,7 +46,7 @@ export const Home = ({ isSpanish }) => {
             </a>
             <a
               href={cvPdf}
-              download="MiguelAngelFernandez-FrontendDeveloper.docx"
+              download="MiguelAngelFernandez-FrontendDeveloper.pdf"
               className="bg-gradient-to-br from-blue-500  to-emerald-600  text-gray-100 py-3 px-6 rounded-full font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgb(59,130,246,0.4)]"
             >
               {" "}
