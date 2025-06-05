@@ -1,6 +1,7 @@
 import { RevealOnScroll } from "../atoms/RevealOnScroll";
 import cvPdf from "../../assets/MiguelAngelFernandez-FrontendDeveloper.pdf";
 import { translations } from "../../lib/constants/translationsHome";
+import PropTypes from "prop-types";
 
 export const Home = ({ isSpanish }) => {
   const { title, description } = translations.home;
@@ -67,4 +68,8 @@ export const Home = ({ isSpanish }) => {
       </RevealOnScroll>
     </section>
   );
+};
+
+Home.propTypes = {
+  isSpanish: PropTypes.bool.isRequired,
 };
