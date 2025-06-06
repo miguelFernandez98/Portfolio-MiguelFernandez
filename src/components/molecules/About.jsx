@@ -1,5 +1,6 @@
 import { RevealOnScroll } from "../atoms/RevealOnScroll";
 import { translations } from "../../lib/constants/translationAbout";
+import PropTypes from "prop-types";
 
 export const About = ({ isSpanish }) => {
   const { title, description, subtitle, workExperience } = translations.about;
@@ -98,4 +99,8 @@ export const About = ({ isSpanish }) => {
       </RevealOnScroll>
     </section>
   );
+};
+
+About.propTypes = {
+  isSpanish: PropTypes.bool.isRequired,
 };

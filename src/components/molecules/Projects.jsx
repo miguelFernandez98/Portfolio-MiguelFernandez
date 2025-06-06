@@ -1,6 +1,7 @@
 import { RevealOnScroll } from "../atoms/RevealOnScroll";
 import { SkeletonLoader } from "../atoms/SkeletonLoader";
 import { translations } from "../../lib/constants/translationsProjects";
+import PropTypes from "prop-types";
 
 export const Projects = ({ isSpanish }) => {
   const { title, subtitles, myProjects } = translations.projects;
@@ -62,4 +63,8 @@ export const Projects = ({ isSpanish }) => {
       </RevealOnScroll>
     </section>
   );
+};
+
+Projects.propTypes = {
+  isSpanish: PropTypes.bool.isRequired,
 };

@@ -3,10 +3,12 @@ import { toast } from "sonner";
 import emailjs from "emailjs-com";
 import { RevealOnScroll } from "../atoms/RevealOnScroll";
 import { translations } from "../../lib/constants/translationsContact";
+import PropTypes from "prop-types";
 
 export const Contact = ({ isSpanish }) => {
-  const { title, name, message, button } = translations.contact;
+  const { title, name, message, button, loading } = translations.contact;
   const currentLang = isSpanish ? "es" : "en";
+  const [isLoading, setIsLoading] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -20,6 +22,7 @@ export const Contact = ({ isSpanish }) => {
   };
 
   const handleSubmit = (e) => {
+    setIsLoading(true);
     e.preventDefault();
     if (!validateEmail(formData.email)) {
       toast.warning("¡invalid email!");
@@ -32,15 +35,22 @@ export const Contact = ({ isSpanish }) => {
         e.target,
         import.meta.env.VITE_PUBLIC_KEY
       )
-      .then((result) => {
-        toast.success("Message sent!");
+      .then(() => {
+        toast.success(currentLang ? "Mensaje enviado!" : "Message sent!");
         setFormData({ name: "", email: "", message: "" });
+        setIsLoading(false);
       })
-      .catch(() =>
-        toast.error("Oops! Something went wrong. Please try again.")
+      .catch(
+        () =>
+          toast.error(
+            currentLang
+              ? "Oops! Algo salió mal. Por favor, inténtalo de nuevo."
+              : "Oops! Something went wrong. Please try again."
+          ),
+        setIsLoading(false)
       );
   };
-
+  
   return (
     <section
       id="contact"
@@ -97,14 +107,19 @@ export const Contact = ({ isSpanish }) => {
               />
             </div>
             <button
+              disabled={isLoading}
               type="submit"
-              className="w-full bg-blue-500 text-gray-100 py-3 px-6 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+              className=" disabled:opacity-30 disabled:animate-pulse w-full bg-blue-500 text-gray-100 py-3 px-6 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
             >
-              {button[currentLang]}
+              {!isLoading ? button[currentLang] : loading[currentLang]}
             </button>
           </form>
         </div>
       </RevealOnScroll>
     </section>
   );
+};
+
+Contact.propTypes = {
+  isSpanish: PropTypes.bool.isRequired,
 };

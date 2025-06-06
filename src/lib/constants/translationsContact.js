@@ -16,6 +16,10 @@ export const translations = {
       en: "Send Message",
       es: "Enviar mensaje",
     },
+    loading: {
+      en: "Loading...",
+      es: "Cargando...",
+    },
     skeletonTranslate: {
       en: "Coming soon...",
       es: "Próximamente...",
