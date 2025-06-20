@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./styles/App.css";
 import "./styles/index.css";
 import { TranslateButton } from "./components/atoms/TranslateButton";
@@ -10,25 +10,18 @@ import { About } from "./components/molecules/About";
 import { Contact } from "./components/molecules/Contact";
 import { Projects } from "./components/molecules/Projects";
 import { Toaster } from "sonner";
+import { useDarkMode } from "./context/DarkModeProvider";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isDark, setIsDark] = useState(true);
+  const { isDark, setIsDark } = useDarkMode();
   const [isSpanish, setIsSpanish] = useState(() => {
     const savedLang = localStorage.getItem("preferredLang");
     return savedLang !== null
       ? savedLang === "es"
       : navigator.language.startsWith("es");
   });
-
-  useEffect(() => {
-    if (isDark) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [isDark]);
 
   return (
     <>
