@@ -15,6 +15,13 @@ export const translations = {
     workExperience: {
       en: [
         {
+          position: "Development consultant",
+          company: "Norkut",
+          period: "2025 - Current",
+          description:
+            "Refactored and optimized the UI/UX of the company's applications to improve the overall software experience, using Figma, Kotlin, and Angular as development tools.",
+        },
+        {
           position: "Frontend developer",
           company: "OMNINEXO - WAIKERI HITECH",
           period: "2024 - 2025",
@@ -37,6 +44,13 @@ export const translations = {
         },
       ],
       es: [
+        {
+          position: "Consultor de desarrollo",
+          company: "Norkut",
+          period: "2025 - Actual",
+          description:
+            "Refactoricé y optimicé  (UI/UX) de los aplicativos en la empresa para mejorar la experiencia general del software, utilizando Figma, Kotlin y Angular como herramientas de desarrollo.",
+        },
         {
           position: "Desarrollador frontend",
           company: "OMNINEXO - WAIKERI HITECH",
