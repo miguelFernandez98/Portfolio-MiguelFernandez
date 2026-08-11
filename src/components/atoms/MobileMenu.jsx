@@ -26,6 +26,7 @@ export const MobileMenu = ({
     >
       <div className="absolute top-0 max-w-5xl w-full mx-auto px-6 py-4 flex justify-between items-center">
         <button
+          aria-label={isDark ? "Cambiar a modo claro" : "Switch to dark mode"}
           className="text-gray-100 text-xl focus:outline-none cursor-pointer hover:text-emerald-500 transition-colors"
           onClick={handleDarkMode}
           id="darkMode"

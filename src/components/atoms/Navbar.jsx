@@ -31,7 +31,8 @@ export const Navbar = ({
         <div className="flex items-center gap-2">
           <div className="flex md:hidden items-center justify-center w-10 h-10 cursor-pointer hover:bg-gray-500/10 rounded-full transition">
             <button
-              aria-label="Open menu"
+              aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
+              aria-expanded={menuOpen}
               className="text-xl"
               onClick={() => setMenuOpen((prev) => !prev)}
             >

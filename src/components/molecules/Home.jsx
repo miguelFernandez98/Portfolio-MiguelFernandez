@@ -55,7 +55,7 @@ export const Home = ({ isSpanish }) => {
             <a
               href="https://www.linkedin.com/in/miguel-angel-fernandez-soto-06b8b9252/"
               target="_blank"
-              className="flex items-center gap-2 bg-blue-500 text-gray-100 py-3 px-6 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgb(59,130,246,0.4)]"
+              className="flex items-center gap-2 bg-blue-600 text-gray-100 py-3 px-6 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgb(37,99,235,0.4)]"
             >
               <svg width="1.2em" height="1.2em" viewBox="0 0 128 128">
                 <path

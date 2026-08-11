@@ -12,6 +12,8 @@ export const TranslateButton = ({ setIsSpanish }) => {
   return (
     <button
       onClick={toggleLanguage}
+      aria-label="Cambiar idioma / Change language"
+      title="ES / EN"
       className="fixed cursor-pointer bottom-4 right-4 z-40 p-3 bg-blue-500/10 text-blue-500 hover:bg-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]  rounded-full shadow-lg transition-all duration-300 hover:scale-110"
     >
       <svg width="1.35em" height="1.35em" viewBox="0 0 24 24">

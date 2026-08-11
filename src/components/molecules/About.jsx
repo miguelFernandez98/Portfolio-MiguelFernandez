@@ -48,18 +48,18 @@ export const About = ({ isSpanish }) => {
             ))}
           </div>
 
-          <h3 className="text-2xl font-bold mb-6 text-gray-800/90 dark:text-gray-100">
+          <h2 className="text-2xl font-bold mb-6 text-gray-800/90 dark:text-gray-100">
             {skillsTitle[currentLang]}
-          </h3>
+          </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-14">
             {skillsGroups.map((group, gi) => (
               <div
                 key={gi}
                 className="rounded-2xl p-4 border border-gray-400/15 dark:border-white/10 bg-gray-500/5 dark:bg-white/5"
               >
-                <h4 className="font-mono text-sm text-blue-500 mb-3">
+                <h3 className="font-mono text-sm text-blue-500 mb-3">
                   {"//"} {group.label}
-                </h4>
+                </h3>
                 <div className="flex flex-wrap gap-2">
                   {group.items.map((tech, ti) => (
                     <span

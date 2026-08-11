@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./styles/App.css";
 import "./styles/index.css";
 import { TranslateButton } from "./components/atoms/TranslateButton";
@@ -24,11 +24,19 @@ function App() {
       : navigator.language.startsWith("es");
   });
 
+  useEffect(() => {
+    document.documentElement.lang = isSpanish ? "es" : "en";
+    document.title = isSpanish
+      ? "Miguel Fernández — Full-stack Developer"
+      : "Miguel Fernández — Full-stack Developer";
+  }, [isSpanish]);
+
   return (
     <>
       <SpeedInsights />
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
-      <section
+      <main
+        id="main"
         className={`min-h-screen transition-all duration-700 ${
           isLoaded ? "opacity-100" : "opacity-0"
         } bg-[#f3f4f6] dark:bg-[#0a0a0a] dark:text-gray-100 text-gray-800/90`}
@@ -53,7 +61,7 @@ function App() {
         <Projects isDark={isDark} isSpanish={isSpanish} />
         <Contact isDark={isDark} isSpanish={isSpanish} />
         <TranslateButton setIsSpanish={setIsSpanish} isSpanish={isSpanish} />
-      </section>
+      </main>
     </>
   );
 }

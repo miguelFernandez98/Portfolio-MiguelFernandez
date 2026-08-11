@@ -123,7 +123,7 @@ export const Contact = ({ isSpanish }) => {
             <button
               disabled={isLoading}
               type="submit"
-              className=" disabled:opacity-30 disabled:animate-pulse w-full bg-gradient-to-br from-blue-500 to-emerald-600 text-gray-100 py-3 px-6 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(16,185,129,0.4)]"
+              className=" disabled:opacity-30 disabled:animate-pulse w-full bg-gradient-to-br from-blue-600 to-emerald-600 text-gray-100 py-3 px-6 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-1 hover:shadow-[0_0_15px_rgba(16,185,129,0.4)]"
             >
               {!isLoading ? button[currentLang] : loading[currentLang]}
             </button>
