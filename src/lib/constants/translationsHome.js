@@ -24,7 +24,6 @@ export const translations = {
         "Full-stack Developer",
         "Desarrollador Frontend",
         "Desarrollador Móvil",
-        "Meterle el webo al doc en el age",
       ],
     },
     tagline: {
