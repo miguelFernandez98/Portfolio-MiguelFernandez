@@ -1,5 +1,9 @@
 export const translations = {
   projects: {
+    marker: {
+      en: "02 — Things I've built",
+      es: "02 — Cosas que he construido",
+    },
     title: {
       en: "Projects",
       es: "Proyectos",
@@ -16,7 +20,7 @@ export const translations = {
         {
           title: "Node-auth",
           description:
-            "Development of an authentication API, designed to meet learning goals.",
+            "Authentication API built with TypeScript and MongoDB for learning purposes.",
           tech: ["Node.js", "Typescript", "MongoDB"],
           link: "https://github.com/miguelFernandez98/Node-auth",
         },
@@ -34,7 +38,7 @@ export const translations = {
         {
           title: "Node-auth",
           description:
-            "Desarrollo de una api de autenticación, elaborado con objetivos de aprendizaje.",
+            "API de autenticación construida con TypeScript y MongoDB con objetivos de aprendizaje.",
           tech: ["Node.js", "Typescript", "MongoDB"],
           link: "https://github.com/miguelFernandez98/Node-auth",
         },

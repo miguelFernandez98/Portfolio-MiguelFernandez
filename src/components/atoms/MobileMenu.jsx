@@ -1,4 +1,5 @@
 import { translations } from "../../lib/constants/translationsNabar";
+import PropTypes from "prop-types";
 
 export const MobileMenu = ({
   menuOpen,
@@ -17,20 +18,20 @@ export const MobileMenu = ({
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full bg-[rgba(10,10,10,0.91)] z-50 flex flex-col items-center justify-center transition-all duration-300 ease-in-out ${
+      className={`fixed top-0 left-0 w-full bg-[#0a0a0a]/95 backdrop-blur-md z-50 flex flex-col items-center justify-center transition-all duration-300 ease-in-out ${
         menuOpen
           ? "h-screen opacity-100 pointer-events-auto"
           : "h-0 opacity-0 pointer-events-none"
       }`}
     >
-      <div className="absolute top-0 max-w-xl w-full mx-auto px-6 py-2 mt-2 flex justify-between items-center">
+      <div className="absolute top-0 max-w-5xl w-full mx-auto px-6 py-4 flex justify-between items-center">
         <button
-          className="text-gray-100 text-3xl focus:outline-none cursor-pointer"
+          className="text-gray-100 text-xl focus:outline-none cursor-pointer hover:text-emerald-500 transition-colors"
           onClick={handleDarkMode}
           id="darkMode"
         >
           {!isDark ? (
-            <svg width="0.90em" height="0.90em" viewBox="0 0 24 24">
+            <svg width="1em" height="1em" viewBox="0 0 24 24">
               <path
                 fill="none"
                 stroke="currentColor"
@@ -41,7 +42,7 @@ export const MobileMenu = ({
               />
             </svg>
           ) : (
-            <svg width="0.90em" height="0.90em" viewBox="0 0 24 24">
+            <svg width="1em" height="1em" viewBox="0 0 24 24">
               <path
                 fill="none"
                 stroke="currentColor"
@@ -55,7 +56,7 @@ export const MobileMenu = ({
         </button>
         <button
           aria-label="Close menu"
-          className="text-gray-100 text-3xl focus:outline-none cursor-pointer"
+          className="text-gray-100 text-3xl focus:outline-none cursor-pointer hover:text-emerald-500 transition-colors"
           onClick={() => setMenuOpen(false)}
         >
           &times;
@@ -66,13 +67,20 @@ export const MobileMenu = ({
           key={link.id}
           href={`#${link.id}`}
           onClick={() => setMenuOpen(false)}
-          className={`text-2xl font-semibold text-gray-100 my-4 transition-transform duration-300 ${
-            menuOpen ? "translate-y-0 opacity-100" : "opacity-0 translate-y-5"
-          }`}
+          className="font-mono text-2xl font-semibold text-gray-100 my-4 transition-transform duration-300 hover:text-emerald-500"
         >
-          {link.label}
+          <span className="text-emerald-500">{"//"}</span> {link.label}
         </a>
       ))}
     </div>
   );
 };
+
+MobileMenu.propTypes = {
+  menuOpen: PropTypes.bool.isRequired,
+  setMenuOpen: PropTypes.func.isRequired,
+  isDark: PropTypes.bool.isRequired,
+  toggleDarkMode: PropTypes.func.isRequired,
+  isSpanish: PropTypes.bool.isRequired,
+};
+

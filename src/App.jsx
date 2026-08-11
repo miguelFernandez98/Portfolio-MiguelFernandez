@@ -10,6 +10,7 @@ import { About } from "./components/molecules/About";
 import { Contact } from "./components/molecules/Contact";
 import { Projects } from "./components/molecules/Projects";
 import { Toaster } from "sonner";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { useDarkMode } from "./context/DarkModeProvider";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
 
   return (
     <>
+      <SpeedInsights />
       {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
       <section
         className={`min-h-screen transition-all duration-700 ${

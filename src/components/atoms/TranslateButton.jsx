@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const TranslateButton = ({ setIsSpanish }) => {
   const toggleLanguage = () => {
     setIsSpanish((prev) => {
@@ -21,3 +23,8 @@ export const TranslateButton = ({ setIsSpanish }) => {
     </button>
   );
 };
+
+TranslateButton.propTypes = {
+  setIsSpanish: PropTypes.func.isRequired,
+};
+

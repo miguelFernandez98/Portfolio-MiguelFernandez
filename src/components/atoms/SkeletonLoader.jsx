@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const SkeletonLoader = ({ text }) => {
   return (
     <section className="">
@@ -18,3 +20,8 @@ export const SkeletonLoader = ({ text }) => {
     </section>
   );
 };
+
+SkeletonLoader.propTypes = {
+  text: PropTypes.string.isRequired,
+};
+

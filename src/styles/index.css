@@ -13,6 +13,22 @@ body {
   @apply bg-[#0a0a0a] text-[#f3f4f6];
 }
 
+.font-mono {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas,
+    monospace;
+}
+
+/* Terminal prompt */
+.terminal-prompt::before {
+  content: "❯ ";
+  @apply text-emerald-500;
+}
+
+/* Section marker like // 01 — Sobre mí */
+.section-marker {
+  @apply font-mono text-xs tracking-widest uppercase text-emerald-500;
+}
+
 @layer utilities {
   @keyframes blink {
     0%,
