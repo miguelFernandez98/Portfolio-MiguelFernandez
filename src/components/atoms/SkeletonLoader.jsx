@@ -1,8 +1,8 @@
-import PropTypes from "prop-types";
+﻿import PropTypes from "prop-types";
 
 export const SkeletonLoader = ({ text }) => {
   return (
-    <section className="">
+    <section>
       <div className="h-7 bg-gray-400 dark:bg-gray-700  rounded mb-3 animate-pulse w-3/4"></div>
       <div className="h-4 bg-gray-400 dark:bg-gray-700  rounded mb-3 animate-pulse w-full"></div>
       <div className="h-4 bg-gray-400 dark:bg-gray-700  rounded mb-4 animate-pulse w-2/3"></div>
@@ -24,4 +24,3 @@ export const SkeletonLoader = ({ text }) => {
 SkeletonLoader.propTypes = {
   text: PropTypes.string.isRequired,
 };
-

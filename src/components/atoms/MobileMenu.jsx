@@ -1,4 +1,4 @@
-import { translations } from "../../lib/constants/translationsNabar";
+﻿import { translations } from "../../lib/constants/translationsNabar";
 import PropTypes from "prop-types";
 
 export const MobileMenu = ({

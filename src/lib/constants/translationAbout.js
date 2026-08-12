@@ -34,13 +34,7 @@ export const translations = {
         },
         frontend: {
           label: "Frontend",
-          items: [
-            "React",
-            "Vue.js",
-            "Angular",
-            "HTML/CSS",
-            "TailwindCSS",
-          ],
+          items: ["React", "Vue.js", "Angular", "Astro", "HTML/CSS", "TailwindCSS"],
         },
         mobile: {
           label: "Mobile",
@@ -48,26 +42,11 @@ export const translations = {
         },
         backend: {
           label: "Backend",
-          items: [
-            "Node.js",
-            "Express",
-            "NestJS",
-            ".NET",
-            "MongoDB",
-            "SQL Server",
-          ],
+          items: ["Node.js", "Express", "NestJS", ".NET", "MongoDB", "SQL Server"],
         },
         tools: {
           label: "Tools & AI",
-          items: [
-            "GitHub",
-            "Jira",
-            "Figma",
-            "AWS",
-            "Azure",
-            "Claude 3.5 API",
-            "GitHub Copilot",
-          ],
+          items: ["GitHub", "Jira", "Figma", "AWS", "Azure", "Claude 3.5 API", "GitHub Copilot"],
         },
       },
       es: {
@@ -77,7 +56,7 @@ export const translations = {
         },
         frontend: {
           label: "Frontend",
-          items: ["React", "Vue.js", "Angular", "HTML/CSS", "TailwindCSS"],
+          items: ["React", "Vue.js", "Angular", "Astro", "HTML/CSS", "TailwindCSS"],
         },
         mobile: {
           label: "Móvil",

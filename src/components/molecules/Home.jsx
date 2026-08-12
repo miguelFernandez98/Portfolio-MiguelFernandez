@@ -1,4 +1,4 @@
-import { RevealOnScroll } from "../atoms/RevealOnScroll";
+﻿import { RevealOnScroll } from "../atoms/RevealOnScroll";
 import { Typewriter } from "../atoms/Typewriter";
 import cvPdfEs from "../../assets/MiguelFernandez-CV-ES.pdf";
 import cvPdfEn from "../../assets/MiguelFernandez-CV-EN.pdf";
@@ -31,7 +31,7 @@ export const Home = ({ isSpanish }) => {
           </p>
           <h1 className="text-5xl md:text-7xl font-extrabold mb-2 leading-tight">
             <span className="block">{firstName[currentLang]}</span>
-            <span className="block bg-gradient-to-br from-blue-500 to-emerald-600 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-br from-blue-500 to-emerald-600 bg-clip-text text-transparent">
               {lastName[currentLang]}
             </span>
           </h1>
@@ -81,7 +81,7 @@ export const Home = ({ isSpanish }) => {
             <a
               href={cvPdf}
               download={`MiguelFernandez-CV-${isSpanish ? "ES" : "EN"}.pdf`}
-              className="flex items-center gap-2 bg-gradient-to-br from-blue-500 to-emerald-600 text-gray-100 py-3 px-6 rounded-full font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgb(16,185,129,0.4)]"
+              className="flex items-center gap-2 bg-linear-to-br from-blue-500 to-emerald-600 text-gray-100 py-3 px-6 rounded-full font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgb(16,185,129,0.4)]"
             >
               <svg width="1.2em" height="1.2em" viewBox="0 0 14 14">
                 <g

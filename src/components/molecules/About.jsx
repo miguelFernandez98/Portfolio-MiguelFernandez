@@ -1,4 +1,4 @@
-import { RevealOnScroll } from "../atoms/RevealOnScroll";
+﻿import { RevealOnScroll } from "../atoms/RevealOnScroll";
 import { translations } from "../../lib/constants/translationAbout";
 import PropTypes from "prop-types";
 
@@ -41,7 +41,7 @@ export const About = ({ isSpanish }) => {
                 <p className="font-mono text-xs text-emerald-500 mb-1">
                   &quot;{fact.label}&quot;
                 </p>
-                <p className="font-mono text-sm text-gray-700 dark:text-gray-200 break-words">
+                <p className="font-mono text-sm text-gray-700 dark:text-gray-200 wrap-break-word">
                   {fact.value}
                 </p>
               </div>
