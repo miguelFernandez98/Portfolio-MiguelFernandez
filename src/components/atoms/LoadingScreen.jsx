@@ -1,14 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 
-export const LoadingScreen = ({ onComplete }) => {
-  const [text, setText] = useState("");
+export const LoadingScreen = ({ onComplete, hidden }) => {
+  const textRef = useRef(null);
   const fullText = "<Hello World />";
+
   useEffect(() => {
     let index = 0;
     const interval = setInterval(() => {
-      setText(fullText.substring(0, index));
       index++;
+      if (textRef.current) {
+        textRef.current.textContent = fullText.substring(0, index);
+      }
       if (index > fullText.length) {
         clearInterval(interval);
         setTimeout(() => {
@@ -17,19 +20,28 @@ export const LoadingScreen = ({ onComplete }) => {
       }
     }, 100);
     return () => clearInterval(interval);
-  }, [onComplete]);
+  }, [fullText, onComplete]);
 
   useEffect(() => {
+    if (hidden) {
+      document.body.classList.remove("no-scroll");
+      return;
+    }
     document.body.classList.add("no-scroll");
     return () => {
       document.body.classList.remove("no-scroll");
     };
-  }, []);
+  }, [hidden]);
 
   return (
-    <section className="fixed inset-0 z-50 bg-white dark:bg-[#0a0a0a] dark:text-gray-100 text-gray-900 flex flex-col items-center justify-center">
+    <section
+      aria-hidden={hidden}
+      className={`fixed inset-0 z-50 bg-white dark:bg-[#0a0a0a] dark:text-gray-100 text-gray-900 flex flex-col items-center justify-center transition-opacity duration-500 ${
+        hidden ? "opacity-0 pointer-events-none" : "opacity-100"
+      }`}
+    >
       <div className="mb-4 text-4xl font-mono font-bold">
-        {text}
+        <span ref={textRef} />
         <span className="animate-blink ml-1">|</span>
       </div>
     </section>
@@ -38,4 +50,5 @@ export const LoadingScreen = ({ onComplete }) => {
 
 LoadingScreen.propTypes = {
   onComplete: PropTypes.func.isRequired,
+  hidden: PropTypes.bool,
 };

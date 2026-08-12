@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 
 export const Typewriter = ({ words }) => {
-  const [text, setText] = useState("");
+  const textRef = useRef(null);
   const stateRef = useRef({ wordIndex: 0, deleting: false, text: "" });
 
   useEffect(() => {
@@ -27,7 +27,9 @@ export const Typewriter = ({ words }) => {
         stateRef.current.text = deleting
           ? current.substring(0, currentText.length - 1)
           : current.substring(0, currentText.length + 1);
-        setText(stateRef.current.text);
+        if (textRef.current) {
+          textRef.current.textContent = stateRef.current.text;
+        }
       }
 
       timer = setTimeout(step, delay);
@@ -39,7 +41,7 @@ export const Typewriter = ({ words }) => {
 
   return (
     <span className="font-mono text-lg md:text-xl text-blue-500">
-      {"//"} {text}
+      <span ref={textRef}>{"//"} </span>
       <span className="animate-blink ml-0.5 text-emerald-500">_</span>
     </span>
   );

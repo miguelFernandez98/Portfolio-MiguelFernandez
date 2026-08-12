@@ -15,7 +15,7 @@ export const translations = {
           description:
             "Design and development of a modern and attractive corporate landing page.",
           tech: ["HTML/CSS", "Javascript"],
-          link: "https://wow-deck.com/",
+          link: "https://wow-deck-vert.vercel.app/",
         },
         {
           title: "Node-auth",
@@ -33,7 +33,7 @@ export const translations = {
           description:
             "Diseño y desarrollo de una landing page empresarial moderna y atractiva.",
           tech: ["HTML/CSS", "Javascript"],
-          link: "https://wow-deck.com/",
+          link: "https://wow-deck-vert.vercel.app/",
         },
         {
           title: "Node-auth",

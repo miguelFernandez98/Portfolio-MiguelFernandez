@@ -1,0 +1,25 @@
+- generic [active] [ref=f1e1]:
+  - generic [ref=f1e2]:
+    - main [ref=f1e3]:
+      - img "Next.js logo" [ref=f1e4]
+      - list [ref=f1e5]:
+        - listitem [ref=f1e6]:
+          - text: Get started by editing
+          - code [ref=f1e7]: app/page.tsx
+          - text: .
+        - listitem [ref=f1e8]: Save and see your changes instantly.
+      - generic [ref=f1e9]:
+        - link [ref=f1e10] [cursor=pointer]:
+          - /url: https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app
+          - img "Vercel logomark" [ref=f1e11]
+          - text: Deploy now
+        - link "Read our docs" [ref=f1e12] [cursor=pointer]:
+          - /url: https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app
+    - contentinfo [ref=f1e13]:
+      - link "Learn" [ref=f1e14] [cursor=pointer]:
+        - /url: https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app
+      - link "Examples" [ref=f1e16] [cursor=pointer]:
+        - /url: https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app
+      - link "Go to nextjs.org →" [ref=f1e18] [cursor=pointer]:
+        - /url: https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app
+  - alert [ref=f1e20]

@@ -34,7 +34,10 @@ function App() {
   return (
     <>
       <SpeedInsights />
-      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)} />}
+      <LoadingScreen
+        onComplete={() => setIsLoaded(true)}
+        hidden={isLoaded}
+      />
       <main
         id="main"
         className={`min-h-screen transition-all duration-700 ${
