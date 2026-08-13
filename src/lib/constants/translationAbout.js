@@ -30,11 +30,11 @@ export const translations = {
       en: {
         languages: {
           label: "Languages",
-          items: ["JavaScript", "TypeScript", "Python", "SQL"],
+          items: ["TypeScript", "JavaScript", "Python", "SQL"],
         },
         frontend: {
           label: "Frontend",
-          items: ["React", "Vue.js", "Angular", "Astro", "HTML/CSS", "TailwindCSS"],
+          items: ["React", "Next.js", "Vue.js", "Nuxt.js", "Angular", "Astro", "HTML/CSS", "TailwindCSS"],
         },
         mobile: {
           label: "Mobile",
@@ -52,11 +52,11 @@ export const translations = {
       es: {
         languages: {
           label: "Lenguajes",
-          items: ["JavaScript", "TypeScript", "Python", "SQL"],
+          items: ["TypeScript", "JavaScript", "Python", "SQL"],
         },
         frontend: {
           label: "Frontend",
-          items: ["React", "Vue.js", "Angular", "Astro", "HTML/CSS", "TailwindCSS"],
+          items: ["React", "Next.js", "Vue.js", "Nuxt.js", "Angular", "Astro", "HTML/CSS", "TailwindCSS"],
         },
         mobile: {
           label: "Móvil",
