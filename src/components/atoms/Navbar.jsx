@@ -1,6 +1,8 @@
 ﻿import { useEffect } from "react";
 import logoWhite from "../../assets/MF_WHITE.svg";
 import logoAlter from "../../assets/MF_ALTER.svg";
+import cvPdfEs from "../../assets/MiguelFernandez-CV-ES.pdf";
+import cvPdfEn from "../../assets/MiguelFernandez-CV-EN.pdf";
 import { translations } from "../../lib/constants/translationsNabar";
 import PropTypes from "prop-types";
 
@@ -13,6 +15,7 @@ export const Navbar = ({
 }) => {
   const { navBar } = translations;
   const currentLang = isSpanish ? "es" : "en";
+  const cvPdf = isSpanish ? cvPdfEs : cvPdfEn;
 
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
@@ -55,6 +58,14 @@ export const Navbar = ({
                 <span>{link.label}</span>
               </a>
             ))}
+            <a
+              href={cvPdf}
+              download={`MiguelFernandez-CV-${isSpanish ? "ES" : "EN"}.pdf`}
+              className="group flex items-center gap-1 text-gray-600 dark:text-gray-300 hover:text-emerald-500 transition-colors"
+            >
+              <span className="text-emerald-600 dark:text-emerald-500">{"//"}</span>
+              <span>CV</span>
+            </a>
           </div>
           <button
             aria-label="Dark mode"

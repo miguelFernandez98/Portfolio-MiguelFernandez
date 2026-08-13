@@ -1,4 +1,6 @@
 ﻿import { translations } from "../../lib/constants/translationsNabar";
+import cvPdfEs from "../../assets/MiguelFernandez-CV-ES.pdf";
+import cvPdfEn from "../../assets/MiguelFernandez-CV-EN.pdf";
 import PropTypes from "prop-types";
 
 export const MobileMenu = ({
@@ -10,6 +12,7 @@ export const MobileMenu = ({
 }) => {
   const { navBar } = translations;
   const currentLang = isSpanish ? "es" : "en";
+  const cvPdf = isSpanish ? cvPdfEs : cvPdfEn;
 
   const handleDarkMode = () => {
     toggleDarkMode();
@@ -73,6 +76,14 @@ export const MobileMenu = ({
           <span className="text-emerald-500">{"//"}</span> {link.label}
         </a>
       ))}
+      <a
+        href={cvPdf}
+        download={`MiguelFernandez-CV-${isSpanish ? "ES" : "EN"}.pdf`}
+        onClick={() => setMenuOpen(false)}
+        className="font-mono text-2xl font-semibold text-gray-100 my-4 transition-transform duration-300 hover:text-emerald-500"
+      >
+        <span className="text-emerald-500">{"//"}</span> CV
+      </a>
     </div>
   );
 };
