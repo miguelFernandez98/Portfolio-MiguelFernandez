@@ -5,10 +5,12 @@ import { TranslateButton } from "./components/atoms/TranslateButton";
 import { LoadingScreen } from "./components/atoms/LoadingScreen";
 import { Navbar } from "./components/atoms/Navbar";
 import { MobileMenu } from "./components/atoms/MobileMenu";
+import { Footer } from "./components/atoms/Footer";
 import { Home } from "./components/molecules/Home";
 import { About } from "./components/molecules/About";
 import { Contact } from "./components/molecules/Contact";
 import { Projects } from "./components/molecules/Projects";
+import { NotFound } from "./components/molecules/NotFound";
 import { Toaster } from "sonner";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { useDarkMode } from "./context/DarkModeProvider";
@@ -16,6 +18,10 @@ import { useDarkMode } from "./context/DarkModeProvider";
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isNotFound] = useState(() => {
+    const path = window.location.pathname.replace(/\/+$/, "") || "/";
+    return path !== "/";
+  });
   const { isDark, setIsDark } = useDarkMode();
   const [isSpanish, setIsSpanish] = useState(() => {
     const savedLang = localStorage.getItem("preferredLang");
@@ -59,10 +65,17 @@ function App() {
           toggleDarkMode={() => setIsDark(!isDark)}
           isSpanish={isSpanish}
         />
-        <Home isDark={isDark} isSpanish={isSpanish} />
-        <About isDark={isDark} isSpanish={isSpanish} />
-        <Projects isDark={isDark} isSpanish={isSpanish} />
-        <Contact isDark={isDark} isSpanish={isSpanish} />
+        {isNotFound ? (
+          <NotFound isSpanish={isSpanish} />
+        ) : (
+          <>
+            <Home isDark={isDark} isSpanish={isSpanish} />
+            <About isDark={isDark} isSpanish={isSpanish} />
+            <Projects isDark={isDark} isSpanish={isSpanish} />
+            <Contact isDark={isDark} isSpanish={isSpanish} />
+          </>
+        )}
+        <Footer isSpanish={isSpanish} />
         <TranslateButton setIsSpanish={setIsSpanish} isSpanish={isSpanish} />
       </main>
     </>

@@ -19,13 +19,18 @@ export const Navbar = ({
   }, [menuOpen]);
 
   return (
-    <nav className="fixed top-0 w-full z-40 bg-[#f3f4f6]/80 dark:bg-[#0a0a0a]/80 backdrop-blur-md">
-      <section className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#home" className="font-mono text-lg font-bold">
+    <header className="fixed top-0 w-full z-40 bg-[#f3f4f6]/80 dark:bg-[#0a0a0a]/80 backdrop-blur-md">
+      <nav
+        aria-label={isSpanish ? "Navegación principal" : "Main navigation"}
+        className="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#home" className="font-mono text-lg font-bold" aria-label="Ir al inicio">
           <img
             className="h-6 w-auto"
             src={isDark ? logoWhite : logoAlter}
-            alt="Logo staff"
+            alt={isSpanish ? "Logo Miguel Fernández" : "Miguel Fernández logo"}
+            width={596}
+            height={346}
           />
         </a>
         <div className="flex items-center gap-2">
@@ -46,7 +51,7 @@ export const Navbar = ({
                 href={`#${link.id}`}
                 className="group flex items-center gap-1 text-gray-600 dark:text-gray-300 hover:text-emerald-500 transition-colors"
               >
-                <span className="text-emerald-500">{"//"}</span>
+                <span className="text-emerald-600 dark:text-emerald-500">{"//"}</span>
                 <span>{link.label}</span>
               </a>
             ))}
@@ -81,8 +86,8 @@ export const Navbar = ({
             )}
           </button>
         </div>
-      </section>
-    </nav>
+      </nav>
+    </header>
   );
 };
 
