@@ -45,7 +45,7 @@ export const Home = ({ isSpanish }) => {
             {tech[currentLang].map((t, key) => (
               <span
                 key={key}
-                className="bg-blue-500/10 text-blue-500 border border-blue-500/20 hover:bg-blue-500/20 py-1 px-3 rounded-3xl text-sm transition"
+                className="bg-blue-600/10 text-blue-700 dark:bg-blue-500/10 dark:text-blue-500 border border-blue-600/20 dark:border-blue-500/20 hover:bg-blue-600/20 py-1 px-3 rounded-3xl text-sm transition"
               >
                 {t}
               </span>
@@ -55,6 +55,7 @@ export const Home = ({ isSpanish }) => {
             <a
               href="https://www.linkedin.com/in/miguel-angel-fernandez-soto-06b8b9252/"
               target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 bg-blue-600 text-gray-100 py-3 px-6 rounded-full font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgb(37,99,235,0.4)]"
             >
               <svg width="1.2em" height="1.2em" viewBox="0 0 128 128">
@@ -68,6 +69,7 @@ export const Home = ({ isSpanish }) => {
             <a
               href="https://github.com/miguelFernandez98"
               target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 bg-gray-800 dark:bg-white/10 text-gray-100 py-3 px-6 rounded-full font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgb(168,85,247,0.4)]"
             >
               <svg width="1.2em" height="1.2em" viewBox="0 0 24 24">

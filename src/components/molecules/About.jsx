@@ -38,7 +38,7 @@ export const About = ({ isSpanish }) => {
                 key={key}
                 className="rounded-2xl p-4 border border-gray-400/15 dark:border-white/10 bg-gray-500/5 dark:bg-white/5"
               >
-                <p className="font-mono text-xs text-emerald-500 mb-1">
+                <p className="font-mono text-xs text-emerald-700 dark:text-emerald-500 mb-1">
                   &quot;{fact.label}&quot;
                 </p>
                 <p className="font-mono text-sm text-gray-700 dark:text-gray-200 wrap-break-word">
@@ -57,14 +57,14 @@ export const About = ({ isSpanish }) => {
                 key={gi}
                 className="rounded-2xl p-4 border border-gray-400/15 dark:border-white/10 bg-gray-500/5 dark:bg-white/5"
               >
-                <h3 className="font-mono text-sm text-blue-500 mb-3">
+                <h3 className="font-mono text-sm text-blue-700 dark:text-blue-500 mb-3">
                   {"//"} {group.label}
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {group.items.map((tech, ti) => (
                     <span
                       key={ti}
-                      className="bg-blue-500/10 text-blue-500 hover:bg-blue-500/25 py-1 px-3 rounded-3xl text-sm transition"
+                      className="bg-blue-600/10 text-blue-700 dark:bg-blue-500/10 dark:text-blue-500 hover:bg-blue-600/20 py-1 px-3 rounded-3xl text-sm transition"
                     >
                       {tech}
                     </span>
@@ -85,7 +85,7 @@ export const About = ({ isSpanish }) => {
               >
                 <div className="absolute bottom-0 left-[calc(0.33rem-0.5px)] top-0 w-px bg-blue-500/20 group-first:top-3" />
                 <div className="absolute left-0 top-2 h-2.5 w-2.5 rounded-full border-[1.5px] border-blue-500 dark:bg-[#0a0a0a] bg-[#f3f4f6]" />
-                <p className="font-mono text-sm text-emerald-500 mb-1">
+                <p className="font-mono text-sm text-emerald-700 dark:text-emerald-500 mb-1">
                   <time dateTime={job.period.replace(" - ", "/")}>
                     {job.period}
                   </time>
@@ -111,7 +111,7 @@ export const About = ({ isSpanish }) => {
             {"//"} {educationTitle[currentLang]}
           </p>
           <div className="rounded-2xl p-5 border border-gray-400/15 dark:border-white/10 bg-gray-500/5 dark:bg-white/5">
-            <p className="font-mono text-sm text-emerald-500 mb-1">
+            <p className="font-mono text-sm text-emerald-700 dark:text-emerald-500 mb-1">
               {education[currentLang].period}
             </p>
             <h4 className="font-semibold text-gray-800/90 dark:text-gray-100">

@@ -40,9 +40,9 @@ export const Typewriter = ({ words }) => {
   }, [words]);
 
   return (
-    <span className="font-mono text-lg md:text-xl text-blue-500">
+    <span className="font-mono text-lg md:text-xl text-blue-700 dark:text-blue-500">
       <span ref={textRef}>{"//"} </span>
-      <span className="animate-blink ml-0.5 text-emerald-500">_</span>
+      <span className="animate-blink ml-0.5 text-emerald-700 dark:text-emerald-500">_</span>
     </span>
   );
 };

@@ -21,12 +21,12 @@ body {
 /* Terminal prompt */
 .terminal-prompt::before {
   content: "❯ ";
-  @apply text-emerald-500;
+  @apply text-emerald-600 dark:text-emerald-500;
 }
 
 /* Section marker like // 01 — Sobre mí */
 .section-marker {
-  @apply font-mono text-xs tracking-widest uppercase text-emerald-500;
+  @apply font-mono text-xs tracking-widest uppercase text-emerald-700 dark:text-emerald-500;
 }
 
 @layer utilities {

@@ -44,7 +44,7 @@ export const Projects = ({ isSpanish }) => {
                       {project.tech.map((tech, techKey) => (
                         <span
                           key={techKey}
-                          className="bg-blue-500/10 text-blue-500 hover:bg-blue-500/25 py-1 px-3 rounded-full text-sm transition-all"
+                          className="bg-blue-600/10 text-blue-700 dark:bg-blue-500/10 dark:text-blue-500 hover:bg-blue-600/25 py-1 px-3 rounded-full text-sm transition-all"
                         >
                           {tech}
                         </span>
@@ -53,7 +53,9 @@ export const Projects = ({ isSpanish }) => {
                     <a
                       href={project.link}
                       target="_blank"
-                      className="mt-auto font-mono text-sm text-emerald-500 hover:text-emerald-400 transition-colors self-start"
+                      rel="noopener noreferrer"
+                      aria-label={`${subtitles[currentLang]}: ${project.title}`}
+                      className="mt-auto font-mono text-sm text-emerald-700 hover:text-emerald-600 dark:text-emerald-500 dark:hover:text-emerald-400 transition-colors self-start"
                     >
                       {subtitles[currentLang]} →
                     </a>
