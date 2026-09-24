@@ -2,7 +2,6 @@
 import "./styles/App.css";
 import "./styles/index.css";
 import { TranslateButton } from "./components/atoms/TranslateButton";
-import { LoadingScreen } from "./components/atoms/LoadingScreen";
 import { Navbar } from "./components/atoms/Navbar";
 import { MobileMenu } from "./components/atoms/MobileMenu";
 import { Footer } from "./components/atoms/Footer";
@@ -16,7 +15,6 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import { useDarkMode } from "./context/DarkModeProvider";
 
 function App() {
-  const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [isNotFound] = useState(() => {
     const path = window.location.pathname.replace(/\/+$/, "") || "/";
@@ -40,15 +38,9 @@ function App() {
   return (
     <>
       <SpeedInsights />
-      <LoadingScreen
-        onComplete={() => setIsLoaded(true)}
-        hidden={isLoaded}
-      />
       <main
         id="main"
-        className={`min-h-screen transition-all duration-700 ${
-          isLoaded ? "opacity-100" : "opacity-0"
-        } bg-[#f3f4f6] dark:bg-[#0a0a0a] dark:text-gray-100 text-gray-800/90`}
+        className="min-h-screen bg-[#f3f4f6] dark:bg-[#0a0a0a] dark:text-gray-100 text-gray-800/90"
       >
         <Toaster theme={isDark ? "dark" : "light"} richColors />
         <Navbar
