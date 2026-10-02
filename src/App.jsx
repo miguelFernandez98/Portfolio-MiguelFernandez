@@ -16,7 +16,7 @@ import { useDarkMode } from "./context/DarkModeProvider";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isNotFound] = useState(() => {
+  const [isNotFound, setIsNotFound] = useState(() => {
     const path = window.location.pathname.replace(/\/+$/, "") || "/";
     return path !== "/";
   });
@@ -34,6 +34,33 @@ function App() {
       ? "Miguel Fernández — Full-stack Developer"
       : "Miguel Fernández — Full-stack Developer";
   }, [isSpanish]);
+
+  useEffect(() => {
+    if (!isNotFound) return;
+    const handleAnchorClick = (event) => {
+      const anchor = event.target.closest('a[href^="#"]');
+      if (!anchor) return;
+      event.preventDefault();
+      const hash = anchor.getAttribute("href");
+      window.history.replaceState({}, "", `/${hash}`);
+      setIsNotFound(false);
+      setMenuOpen(false);
+      requestAnimationFrame(() => {
+        document.querySelector(hash)?.scrollIntoView({ behavior: "smooth" });
+      });
+    };
+    document.addEventListener("click", handleAnchorClick);
+    return () => document.removeEventListener("click", handleAnchorClick);
+  }, [isNotFound]);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      const path = window.location.pathname.replace(/\/+$/, "") || "/";
+      setIsNotFound(path !== "/");
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
 
   return (
     <>

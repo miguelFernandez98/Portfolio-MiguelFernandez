@@ -134,7 +134,7 @@ export const Contact = ({ isSpanish }) => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-400/15 dark:border-white/10 bg-gray-500/5 dark:bg-white/5 text-gray-600 dark:text-gray-300 hover:text-emerald-500 hover:border-emerald-500/40 hover:bg-emerald-500/10 transition-all"
+              className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-400/15 dark:border-white/10 bg-gray-500/5 dark:bg-white/5 text-gray-600 dark:text-gray-300 hover:text-emerald-500 hover:bg-emerald-500/10 transition-all"
             >
               <svg width="1.4em" height="1.4em" viewBox="0 0 24 24">
                 <path
@@ -148,7 +148,7 @@ export const Contact = ({ isSpanish }) => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-400/15 dark:border-white/10 bg-gray-500/5 dark:bg-white/5 text-gray-600 dark:text-gray-300 hover:text-emerald-500 hover:border-emerald-500/40 hover:bg-emerald-500/10 transition-all"
+              className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-400/15 dark:border-white/10 bg-gray-500/5 dark:bg-white/5 text-gray-600 dark:text-gray-300 hover:text-emerald-500 hover:bg-emerald-500/10 transition-all"
             >
               <svg width="1.4em" height="1.4em" viewBox="0 0 128 128">
                 <path
@@ -162,7 +162,7 @@ export const Contact = ({ isSpanish }) => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Email"
-              className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-400/15 dark:border-white/10 bg-gray-500/5 dark:bg-white/5 text-gray-600 dark:text-gray-300 hover:text-emerald-500 hover:border-emerald-500/40 hover:bg-emerald-500/10 transition-all"
+              className="flex items-center justify-center w-12 h-12 rounded-full border border-gray-400/15 dark:border-white/10 bg-gray-500/5 dark:bg-white/5 text-gray-600 dark:text-gray-300 hover:text-emerald-500 hover:bg-emerald-500/10 transition-all"
             >
               <svg width="1.4em" height="1.4em" viewBox="0 0 24 24">
                 <path
