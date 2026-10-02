@@ -5,21 +5,25 @@ export const translations = {
       es: "01 — Sobre mí",
     },
     description: {
-      en: "I'm a Systems Engineer from Isla de Margarita, Venezuela, with over 4 years of experience designing and scaling high-impact web and mobile applications. I focus on Clean Architecture, SOLID and UI/UX, and I adopt Generative AI (Claude, GitHub Copilot) to accelerate delivery by up to 30% and prevent bugs.",
-      es: "Soy Ingeniero de Sistemas, de Isla de Margarita, Venezuela, con más de 4 años de trayectoria diseñando y escalando aplicaciones web y móviles de alto impacto. Me enfoco en Clean Architecture, SOLID y UI/UX, y adopto IA generativa (Claude, GitHub Copilot) para acelerar la entrega hasta un 30% y prevenir bugs.",
+      en: "Systems Engineer from Isla de Margarita, Venezuela, with 4+ years of experience developing and modernizing web and mobile applications. Strong background in JavaScript/TypeScript, React, Vue.js and Angular, with experience in mobile development, REST APIs, microservices, UI/UX and AI-assisted development using Claude and GitHub Copilot.",
+      es: "Ingeniero de Sistemas de Isla de Margarita, Venezuela, con más de 4 años de experiencia desarrollando y modernizando aplicaciones web y móviles. Sólida experiencia en JavaScript/TypeScript, React, Vue.js y Angular, con experiencia en desarrollo móvil, APIs REST, microservicios, UI/UX y desarrollo asistido por IA mediante Claude y GitHub Copilot.",
     },
     funFacts: {
       en: [
         { label: "location", value: "Isla de Margarita, Venezuela" },
-        { label: "role", value: "Full-stack Developer" },
-        { label: "focus", value: "Clean Architecture, SOLID, UI/UX" },
-        { label: "ai", value: "Claude 3.5 API · GitHub Copilot" },
+        { label: "role", value: "Software Engineer · Full-stack" },
+        { label: "focus", value: "REST APIs · Microservices · UI/UX" },
+        { label: "stack", value: "JavaScript/TypeScript · React · Vue · Angular" },
+        { label: "ai", value: "Claude · GitHub Copilot" },
+        { label: "languages", value: "Spanish native · English B1" },
       ],
       es: [
         { label: "ubicación", value: "Isla de Margarita, Venezuela" },
-        { label: "rol", value: "Full-stack Developer" },
-        { label: "enfoque", value: "Clean Architecture, SOLID, UI/UX" },
-        { label: "ia", value: "Claude 3.5 API · GitHub Copilot" },
+        { label: "rol", value: "Software Engineer · Full-stack" },
+        { label: "enfoque", value: "APIs REST · Microservicios · UI/UX" },
+        { label: "stack", value: "JavaScript/TypeScript · React · Vue · Angular" },
+        { label: "ia", value: "Claude · GitHub Copilot" },
+        { label: "idiomas", value: "Español nativo · Inglés B1" },
       ],
     },
     skillsTitle: {
@@ -30,53 +34,53 @@ export const translations = {
       en: {
         languages: {
           label: "Languages",
-          items: ["TypeScript", "JavaScript", "Python", "SQL"],
+          items: ["TypeScript", "JavaScript", "Python", "SQL", "Kotlin", "Dart", "C#"],
         },
         frontend: {
           label: "Frontend",
-          items: ["React", "Next.js", "Vue.js", "Nuxt.js", "Angular", "Astro", "HTML/CSS", "TailwindCSS"],
+          items: ["React", "Next.js", "Vue.js", "Nuxt", "Angular", "Astro", "HTML/CSS", "Tailwind CSS"],
         },
         mobile: {
           label: "Mobile",
-          items: ["Flutter", "React Native", "Ionic/Capacitor"],
+          items: ["Flutter", "Ionic/Capacitor"],
         },
         backend: {
-          label: "Backend",
-          items: ["Node.js", "Express", "NestJS", ".NET", "MongoDB", "SQL Server"],
+          label: "Backend & APIs",
+          items: ["Node.js", "Express", "NestJS", ".NET", "REST APIs"],
+        },
+        databases: {
+          label: "Databases",
+          items: ["MongoDB", "SQL Server"],
         },
         tools: {
-          label: "Tools & AI",
-          items: ["GitHub", "Jira", "Figma", "AWS", "Azure", "Claude 3.5 API", "GitHub Copilot"],
+          label: "Tools & Cloud",
+          items: ["Git", "GitHub", "GitLab", "Docker", "AWS", "Azure", "Swagger", "Cypress", "Figma", "CI/CD"],
         },
       },
       es: {
         languages: {
           label: "Lenguajes",
-          items: ["TypeScript", "JavaScript", "Python", "SQL"],
+          items: ["TypeScript", "JavaScript", "Python", "SQL", "Kotlin", "Dart", "C#"],
         },
         frontend: {
           label: "Frontend",
-          items: ["React", "Next.js", "Vue.js", "Nuxt.js", "Angular", "Astro", "HTML/CSS", "TailwindCSS"],
+          items: ["React", "Next.js", "Vue.js", "Nuxt", "Angular", "Astro", "HTML/CSS", "Tailwind CSS"],
         },
         mobile: {
           label: "Móvil",
-          items: ["Flutter", "React Native", "Ionic/Capacitor"],
+          items: ["Flutter", "Ionic/Capacitor"],
         },
         backend: {
-          label: "Backend",
-          items: ["Node.js", "Express", "NestJS", ".NET", "MongoDB", "SQL Server"],
+          label: "Backend y APIs",
+          items: ["Node.js", "Express", "NestJS", ".NET", "APIs REST"],
+        },
+        databases: {
+          label: "Base de datos",
+          items: ["MongoDB", "SQL Server"],
         },
         tools: {
-          label: "Herramientas e IA",
-          items: [
-            "GitHub",
-            "Jira",
-            "Figma",
-            "AWS",
-            "Azure",
-            "Claude 3.5 API",
-            "GitHub Copilot",
-          ],
+          label: "Herramientas y Cloud",
+          items: ["Git", "GitHub", "GitLab", "Docker", "AWS", "Azure", "Swagger", "Cypress", "Figma", "CI/CD"],
         },
       },
     },
@@ -108,7 +112,7 @@ export const translations = {
           period: "Jul 2025 - Present",
           location: "Venezuela · On-site",
           description:
-            "Led full-stack modernization of Angular and .NET modules under Clean Code and SOLID, improving scalability and cutting load time by 10%. Built an intelligent report generation system with the Claude API (Python) and redesigned UX in Figma, delivering modules with 0 critical defects.",
+            "Led the modernization of Angular and .NET modules, applying Clean Code and SOLID principles and reducing application load time by 10%. Developed an AI-powered reporting solution integrating the Claude API with Python to reduce manual analysis effort. Redesigned UI/UX workflows with Figma and implemented QA validations, delivering modules with zero critical defects during formal testing.",
         },
         {
           position: "Frontend Developer",
@@ -116,7 +120,15 @@ export const translations = {
           period: "Feb 2024 - Apr 2025",
           location: "Venezuela · Hybrid",
           description:
-            "Designed and deployed custom web and mobile apps with Vue.js and Ionic/Capacitor. Implemented a real-time inventory data capture system, eliminating manual records and improving accuracy by 20%. Used Claude and GitHub Copilot to accelerate delivery by 30%.",
+            "Developed web and mobile applications using Vue.js and Ionic/Capacitor to support business process digitalization. Implemented real-time inventory data capture, replacing manual records and improving data accuracy by 20%.",
+        },
+        {
+          position: "Frontend Developer",
+          company: "INSIDE MARKET / RIO SUPERMARKET",
+          period: "Feb 2022 - Feb 2024",
+          location: "Venezuela · On-site",
+          description:
+            "Developed internal web applications using Vue.js, supporting payroll management and cash reconciliation processes. Integrated and modified REST APIs and microservices, consuming services from Vue.js and Kotlin applications and modifying .NET endpoints; validated APIs using Swagger. Participated in requirements gathering, technical analysis and solution design, using Git, GitHub and GitLab in a collaborative development environment.",
         },
         {
           position: "Development Analyst",
@@ -126,14 +138,6 @@ export const translations = {
           description:
             "Refactored and optimized existing applications that were not working correctly, updating dependencies and improving the UI/UX for both mobile and web applications.",
         },
-        {
-          position: "Development Specialist",
-          company: "INSIDE MARKET/RIO SUPERMARKET",
-          period: "2022 - 2024",
-          location: "Venezuela",
-          description:
-            "Worked as part of a team to develop web applications that supported and improved the user experience within the company, such as payroll and cash register applications, among others.",
-        },
       ],
       es: [
         {
@@ -142,15 +146,23 @@ export const translations = {
           period: "Jul 2025 - Presente",
           location: "Venezuela · Presencial",
           description:
-            "Lideré la modernización full-stack de módulos en Angular y .NET bajo Clean Code y SOLID, mejorando la escalabilidad y reduciendo el tiempo de carga un 10%. Desarrollé un sistema de reportes inteligentes con la API de Claude (Python) y rediseñé la UX en Figma, entregando módulos con 0 defectos críticos.",
+            "Lideré la modernización de módulos en Angular y .NET, aplicando principios de Clean Code y SOLID y reduciendo el tiempo de carga de la aplicación en un 10%. Desarrollé una solución de generación de reportes asistida por IA, integrando la API de Claude con Python para reducir el tiempo dedicado al análisis manual. Rediseñé flujos de UI/UX utilizando Figma e implementé validaciones de QA, entregando módulos sin defectos críticos durante las pruebas formales.",
         },
         {
-          position: "Desarrollador frontend",
+          position: "Frontend Developer",
           company: "OMNINEXO - WAIKERI HITECH",
           period: "Feb 2024 - Abr 2025",
           location: "Venezuela · Híbrido",
           description:
-            "Diseñé y desplegué aplicaciones web y móviles con Vue.js e Ionic/Capacitor. Implementé un sistema de captura de inventarios en tiempo real, eliminando registros manuales y mejorando la precisión un 20%. Usé Claude y GitHub Copilot para acelerar la entrega un 30%.",
+            "Desarrollé aplicaciones web y móviles utilizando Vue.js e Ionic/Capacitor para apoyar la digitalización de procesos empresariales. Implementé un sistema de captura de datos de inventario en tiempo real, reemplazando registros manuales y mejorando la precisión de los datos en un 20%.",
+        },
+        {
+          position: "Frontend Developer",
+          company: "INSIDE MARKET / RIO SUPERMARKET",
+          period: "Feb 2022 - Abr 2024",
+          location: "Venezuela · Presencial",
+          description:
+            "Desarrollé aplicaciones web internas utilizando Vue.js para procesos empresariales, incluyendo gestión de nómina y cuadre de caja. Integré y modifiqué APIs REST y microservicios, consumiendo servicios desde aplicaciones Vue.js y Kotlin y modificando endpoints en .NET; validé APIs utilizando Swagger. Participé en el levantamiento de requerimientos, análisis técnico y estructuración de soluciones, utilizando Git, GitHub y GitLab en un entorno de desarrollo colaborativo.",
         },
         {
           position: "Analista de desarrollo",
@@ -159,14 +171,6 @@ export const translations = {
           location: "Venezuela",
           description:
             "Refactorizé y optimicé aplicativos que no funcionaban correctamente, actualizando dependencias y mejorando el UI/UX tanto en aplicativos móviles como web.",
-        },
-        {
-          position: "Especialista de desarrollo",
-          company: "INSIDE MARKET/RIO SUPERMARKET",
-          period: "2022 - 2024",
-          location: "Venezuela",
-          description:
-            "Trabajé en equipo para el desarrollo de aplicativos web que soportaban y mejoraban la experiencia de usuario en la empresa, tales como aplicativos de nómina, cuadre de caja, entre otros.",
         },
       ],
     },
