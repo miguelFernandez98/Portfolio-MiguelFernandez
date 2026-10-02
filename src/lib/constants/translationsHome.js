@@ -27,8 +27,8 @@ export const translations = {
       ],
     },
     tagline: {
-      en: "Systems Engineer building high-impact web & mobile apps with React, Vue and TypeScript — and Generative AI to ship faster.",
-      es: "Ingeniero de Sistemas que crea apps web y móviles de alto impacto con React, Vue y TypeScript — e IA generativa para entregar más rápido.",
+      en: "Systems Engineer building high-impact web & mobile apps with React, Vue and TypeScript and Generative AI to ship faster.",
+      es: "Ingeniero de Sistemas que crea apps web y móviles de alto impacto con React, Vue y TypeScript y IA generativa para entregar más rápido.",
     },
     tech: {
       en: ["React", "Vue", "TypeScript", "Flutter", "Node.js"],
